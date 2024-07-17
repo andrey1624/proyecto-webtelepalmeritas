@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-image: url(fondo\ html.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            
+    
+        }
+
+        .container {
+            width: 1100px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            top: 20px;
+ 
+        }
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .slide_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .slider_button {
+            width: 250px;
+            height: 370px;
+            transition: all 0.7s ease;
+            border-radius: 20px;
+            border: 3px solid rgb(0, 0, 0);
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .slider_button:focus {
+            outline: none;
+            width: 320px;
+            height: 470px;
+            border: 3px solid black;
+        }
+
+        .slider_button:hover {
+            background-color: rgba(39, 39, 39, 0.2);
+        }
+
+        .slider_button img {
+            width: 90%;
+            height: auto;
+            border-radius: 20px;
+            transition: all 0.7s ease;
+            position: relative;
+            top: 30px;
+        }
+
+        .slider_button:focus img {
+            width: 90%;
+            height: auto;
+            position: relative;
+            top: 30px;
+        }
+
+        .slider_button:focus p {
+            font-size: 37px;
+            position: absolute;
+            top: 13px;
+        }
+        .slider_button p {
+            position: absolute;
+            top: 13px;
+            width: 100%;
+            margin: 0;
+            color: black;
+            font-size: 30px;
+            transition: all 0.7s ease;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div><img src="img/logo-colegio.png" alt="" class="logo"></div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="submit" onclick="performSearch()">Buscar</button>
+        </div>
+        <div class="dropdown">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+                <a href="inicio.html">INICIO</a>
+                <a href="docentes.html">DOCENTES</a>
+                <a href="manual.html">MANUAL DE CONVIVENCIA</a>
+                <a href="mision y vision.html">MISIÓN Y VISIÓN</a>
+                <a href="prom.html">PROM</a>
+                <a href="sedes.html">SEDES</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="imgContainer">
+            <div class="slide_div" id="slide_1">
+                <button class="slider_button" id="button1">
+                    <p>DIARIO MASCULINO</p>
+                    <img src="img docentes/d. caño grande.jpg" alt="Diario Masculino">
+                </button>
+            </div>
+            <div class="slide_div" id="slide_2">
+                <button class="slider_button" id="button2">
+                    <p>UNISEX</p>
+                    <img src="img docentes/d. caño grande.jpg" alt="Unisex">
+                </button>
+            </div>
+            <div class="slide_div" id="slide_3">
+                <button class="slider_button" id="button3">
+                    <p>DIARIO FEMENINO</p>
+                    <img src="img docentes/d. caño grande.jpg" alt="Nuevo Contenedor">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

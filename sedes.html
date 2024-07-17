@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    .fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(fondo\ html.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Envía la imagen al fondo */
+    filter: blur(10px);
+  
+}
+ol{
+margin: 50px 50px ;
+}
+
+ol div{
+width: 1050px;
+height: 400px;
+margin: 50px 0;
+text-align: center;
+font-size: 30px;
+padding: 20px 20px ;
+border-radius: 15px;
+border: 3px solid black;
+
+}
+.sedes{
+    width: 620px;   
+    height: 340px;
+    position: relative;
+    top: -14px;
+    left:-150px;
+    border-radius: 15px;
+}
+.docentes{
+    width: 180px;
+    height: 230px;
+    position: relative;
+    top: -390px;
+    left: 352.5px;
+    border-radius: 15px;
+}
+.texto{
+    width: 230px;
+    height: 280px;  
+    position: relative;
+    top: -410px;
+    left: 760px;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div ><img src="img/logo-colegio.png" alt="" class="logo"></div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="submit" onclick="performSearch()">Buscar</button>
+        </div>
+     
+            <div class="dropdown">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+           
+    <div class="dropdown-content">
+        <a href="inicio.html">INICIO</a>
+        <a href="docentes.html">DOCENTES</a>
+        <a href="manual.html">MANUAL DE CONVIVENCIA</a>
+        <a href="mision y vision.html">MISIÓN Y VISIÓN</a>
+        <a href="prom.html">PROM</a>
+        <a href="uniforme.html">UNIFORME</a>
+    </div>
+</div>
+</header> 
+<div class="fixed-image"></div>
+<ol>
+    <div class="p">
+        Intitución Educativa Telepalmeritas (Sede Principal)
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/rectora.jpg" alt="" class="docentes"></p>
+        <p class="texto">RECTORA: LILIANA ANDREA ARÉVALO MANCIPE</p>
+    </div>
+    <div>
+        Sede Caño Grende
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img arreglo/d. caño grande.png" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: WILSON ANDRES MARIÑO RIVERA</p>
+    </div>
+    <div>
+        Sede Dorada del Guavio
+        <p><img src="img/IMG-20240527-WA0014.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. dorada.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: ALBA CONSUELO GONZÁLEZ OTÁLORA</p>
+    </div>
+    <div>
+        Sede El Tesoro
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. el tesoro.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: LEIDY PAOLA HERNÁNDEZ VELÁSQUEZ </p>
+    </div>
+    <div>
+        Sede Guamal
+        <p><img src="img/colegio guamal.jpeg" alt="" class="sedes"></p>
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="docentes"></p>
+        <p class="texto">fsfsf</p>
+    </div>
+    <div>
+        Sede Guamalito 
+        <p><img src="img/IMG-20240527-WA0015.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. guamalito.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: LEYDI CAROLINA VELANDIA </p>
+    </div>
+    <div>
+        Sede Horizontes
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. horizontes.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: ROMELIA GACHA BERMÚDEZ</p>
+    </div>
+    <div>
+        Sede La Frontera
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. frontera.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: YAMIT HOLGUÍN</p>
+    </div>
+    <div>
+        Sede La Mesa
+        <p><img src="img/IMG-20240527-WA0018.jpg" alt="" class="sedes"></p>
+        <p></p>
+        <p class="texto">sklsdjs</p>
+    </div>
+    <div>
+        Sede Monumento
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. monumento.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: MARÍA AIDÉ GÁMEZ</p>
+    </div>
+    <div>
+        Sede Puerto Rico
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. puerto rico.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: ELIZABETH MELO</p>
+    </div>
+    <div>
+        Sede San Carlos
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. san carlos.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: LUZ ANGELA AMAYA CRUZ </p>
+    </div>
+    <div>
+        Sede San José Del Chuy
+        <p><img src="img/IMG-20240527-WA0016.jpg" alt="" class="sedes"></p>
+        <p><img src="img docentes/d. san jose chuy.jpg" alt="" class="docentes"></p>
+        <p class="texto">DOCENTE: JORGE MONTAÑEZ VARGAS</p>
+    </div>
+</ol>
+<script src="scripts.js"></script>
+</body>
+</html>
