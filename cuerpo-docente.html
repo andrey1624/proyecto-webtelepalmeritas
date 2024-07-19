@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuerpo docente</title>
+  <link rel="stylesheet" href="./css/cuerpo-docente.css">
+</head>
+<body>
+  <div class="container">
+
+    <input type="radio" id="i1" name="images" checked>
+    <input type="radio" id="i2" name="images">
+    <input type="radio" id="i3" name="images">
+    <input type="radio" id="i4" name="images">
+
+    <div class="slide" id="img-1">
+      <img src="img/docentes/rectora.png">
+      <label class="prev" for="i4"><span>‹</span></label>
+      <label class="next" for="i2"><span>›</span></label>
+    </div>
+
+    <div class="slide" id="img-2">
+      <img src="img/docentes/fredy-cocunubo.png">
+      <label class="prev" for="i1"><span>‹</span></label>
+      <label class="next" for="i3"><span>›</span></label>
+    </div>
+
+    <div class="slide" id="img-3">
+      <img src="img/docentes/felipe-quintero.png">
+      <label class="prev" for="i2"><span>‹</span></label>
+      <label class="next" for="i4"><span>›</span></label>
+    </div>
+
+    <div class="slide" id="img-4">
+      <img src="img/docentes/fredy-rodriguez.png">
+      <label class="prev" for="i3"><span>‹</span></label>
+      <label class="next" for="i1"><span>›</span></label>
+    </div>
+
+    <nav id="nav">
+      <label for="i1" class="dots" id="dot-1"></label>
+      <label for="i2" class="dots" id="dot-2"></label>
+      <label for="i3" class="dots" id="dot-3"></label>
+      <label for="i4" class="dots" id="dot-4"></label>
+    </nav>
+  </div>
+</body>
+</html>
