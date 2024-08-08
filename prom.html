@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="CSS/styles.css"> <link rel="stylesheet" href="CSS/prom.css">
+
+</head>
+<body>
+    <img src="fondo html.jpg" alt=""class="fixed-image">
+    
+    <header class="navbar">
+        <div class="button-container">
+            <button onclick="window.location.href='index.html'">INICIO</button>
+            <button onclick="window.location.href='docentes.html'">P. ADMINISTRATIVO</button>
+            <button onclick="window.location.href='manual.html'">MANUAL DE CONVIVENCIA</button>
+            <button onclick="window.location.href='mision y vision.html'">MISIÓN Y VISIÓN</button>
+            <button onclick="window.location.href='sedes.html'">SEDES</button>
+            <button onclick="window.location.href='uniforme.html'">UNIFORME</button>
+         
+        </div>    
+        <div><img src="logo-colegio.png" alt="" class="logo"></div>
+    </header>
+
+  
+    <div class="container">
+        <div class="slider">  
+            <div class="slides">  
+                <!-- Imágenes para el slider -->  
+
+                <div class="slide"><img src="img proms/IMG2023.jpeg" alt="Imagen 2"><p>PROM 2023</p></div>              
+                <div class="slide"><img src="img proms/IMG2022.jpeg" alt="Imagen 3"><p>PROM 2022</p></div>
+                <div class="slide"><img src="img proms/IMG2021.jpeg" alt="Imagen 4"><p>PROM 2021</p></div> 
+                <div class="slide"><img src="img proms/IMG2020.jpeg" alt="Imagen 5"><p>PROM 2020</p></div> 
+                <div class="slide"><img src="img proms/IMG2019.jpeg" alt="Imagen 6"><p>PROM 2019</p></div> 
+                <div class="slide"><img src="img proms/IMG2018.jpg" alt="Imagen 7"><p>PROM 2018</p></div> 
+                <div class="slide"><img src="img proms/IMG2015.jpeg" alt="Imagen 8"><p>PROM 2017</p></div> 
+                <div class="slide"><img src="img proms/IMG2015.jpeg" alt="Imagen 9"><p>PROM 2016</p></div> 
+                <div class="slide"><img src="img proms/IMG2015.png" alt="Imagen 10"><p>PROM 2015</p></div> 
+                <div class="slide"><img src="img proms/IMG2014.png" alt="Imagen 11"><p>PROM 2014</p></div> 
+                <div class="slide"><img src="img proms/IMG2013.jpg" alt="Imagen 12"><p>PROM 2013</p></div> 
+                <div class="slide"><img src="img proms/IMG2012.png" alt="Imagen 13"><p>PROM 2012</p></div> 
+                <div class="slide"><img src="img proms/IMG2011.png" alt="Imagen 14"><p>PROM 2011</p></div> 
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>  
+        </div>
+    </div>
+    
+    <script>
+        const slidesContainer = document.querySelector('.slides');
+        const slides = document.querySelectorAll('.slide');
+        const slideCount = slides.length;
+        let currentIndex = 1; // La primera imagen real
+        const slideWidth = slides[0].clientWidth;
+
+        // Clonar la primera y la última imagen
+        const firstSlide = slides[0].cloneNode(true);
+        const lastSlide = slides[slides.length - 1].cloneNode(true);
+
+        // Añadir las imágenes clonadas al principio y al final
+        slidesContainer.appendChild(firstSlide);
+        slidesContainer.insertBefore(lastSlide, slidesContainer.firstChild);
+
+        // Actualizar el slideWidth
+        const updatedSlides = document.querySelectorAll('.slide');
+        const updatedSlideWidth = updatedSlides[0].clientWidth;
+
+        // Ajustar la posición inicial del slider
+        slidesContainer.style.transform = `translateX(${-updatedSlideWidth}px)`;
+        slidesContainer.style.transition = 'none';
+
+        function changeSlide(direction) {
+            slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+            currentIndex += direction;
+            slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
+
+            slidesContainer.addEventListener('transitionend', function() {
+                if (currentIndex === 0) {
+                    slidesContainer.style.transition = 'none';
+                    currentIndex = slideCount;
+                    slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
+                } else if (currentIndex === slideCount + 1) {
+                    slidesContainer.style.transition = 'none';
+                    currentIndex = 1;
+                    slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
+                }
+            }, { once: true });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+<body>
+    <img src="fondo html.jpg" alt=""class="fixed-image">
+    <header class="navbar">
+        <div class="button-container">
+            <button onclick="window.location.href='docentes.html'">P. ADMINISTRATIVO</button>
+            <button onclick="window.location.href='manual.html'">MANUAL DE CONVIVENCIA</button>
+            <button onclick="window.location.href='mision y vision.html'">MISÍON Y VISIÓN</button>
+            <button onclick="window.location.href='prom.html'">PROM</button>
+            <button onclick="window.location.href='sedes.html'">SEDES</button>
+            <button onclick="window.location.href='uniforme.html'">UNIFORME</button>
+        </div>    
+        <div><img src="logo-colegio.png" alt="" class="logo"></div>
+    </header>
+    
+    <div class="contenedor">
+        <div class="slider">
+            <img src="img proms/IMG2011.jpg" class="active" alt="Imagen 1">
+            <img src="img proms/IMG2012.jpg" alt="Imagen 2">
+            <img src="img proms/IMG2014.jpg" alt="Imagen 3">
+            <img src="img proms/IMG2015.jpg" alt="Imagen 4">
+        </div>
+        <div class="video"></div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://www.facebook.com/egresados.coltelepalmeritas" class="footer-button facebook">Facebook</a>
+        <a href="#" class="footer-button tiktok"> TikTok</a>
+    </div>
+    
+    <div class="conte">
+        <a href="contenido.html" class="footerr-buttonn cont"> CONTENIDO</a>
+    </div>
+    
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider img');
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 3000); // Cambia de imagen cada 3 segundos
+    </script>
+</body>
+</html>

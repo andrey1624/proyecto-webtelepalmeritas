@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    /* Para permitir el desplazamiento del contenido sin interferir con la navbar */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center;
+    background-color: #337ab7; /* Color de fondo de la barra de navegación */
+    padding: 20px 20px;
+    border-radius: 20px;
+    position: absolute; /* Cambia a absoluto para centrarlo */
+    left: 50%; /* Mueve el contenedor hacia el centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta el contenedor para que esté centrado */
+    height: 3rem;
+    width: 90%;
+    z-index: 1;
+}
+
+.navbar .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+}
+
+.navbar .button-container button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px; /* Aumento de radio de borde para botones */
+    padding: 15px 30px; /* Aumento de tamaño de los botones */
+    margin-right: 10px; /* Espacio entre botones */
+    cursor: pointer;
+    color: #007BFF;
+    transition: background-color 0.3s;
+    font-size: 19px;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar .button-container button:hover {
+    background-color: #0056b3;
+    color: #FFFFFF;
+}
+
+.navbar .logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 5px; /* Mueve el logo a la derecha */
+}
+
+
+

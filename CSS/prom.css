@@ -1,0 +1,92 @@
+body{
+    overflow: hidden;
+}
+.fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(fondo\ html.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Envía la imagen al fondo */
+    filter: blur(10px);
+}
+
+.container {
+    width: 1100px;
+    height: 480px; /* Ajustado para coincidir con la altura del slider */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding-top: 115px;
+    position: relative;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+    box-sizing: border-box; 
+    border-radius: 15px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slides img {
+    margin: 20px 23rem;
+    width: 650px;
+    height: 430px;
+    display: block;
+    border-radius: 15px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: gray;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    width: 10rem;
+    height: 13rem;
+    text-align: center;
+    font-size: 90px;
+    position: relative;
+    top: -390px;
+    left: 5rem;
+}
