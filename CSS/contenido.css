@@ -41,13 +41,15 @@ body {
 .slider img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: none;
+    max-width: 100%;  /* Asegura que la imagen no sea más grande que el contenedor */
+    max-height: 100%; /* Limita la altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+    display: none; /* Oculta todas las imágenes por defecto */
     border-radius: 10px;
 }
 
 .slider img.active {
-    display: block;
+    display: block; /* Solo muestra la imagen activa */
 }
 
 .argumento {
