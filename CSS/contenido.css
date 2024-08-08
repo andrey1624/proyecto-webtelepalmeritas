@@ -26,6 +26,16 @@ body {
     text-align: center;
     padding: 20px 0;
     box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.fecha {
+    font-size: 40px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 2;
 }
 
 .slider {
@@ -41,15 +51,15 @@ body {
 .slider img {
     width: 100%;
     height: 100%;
-    max-width: 100%;  /* Asegura que la imagen no sea más grande que el contenedor */
-    max-height: 100%; /* Limita la altura de la imagen */
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
-    display: none; /* Oculta todas las imágenes por defecto */
+    max-width: 100%;  
+    max-height: 100%; 
+    object-fit: cover; 
+    display: none; 
     border-radius: 10px;
 }
 
 .slider img.active {
-    display: block; /* Solo muestra la imagen activa */
+    display: block;
 }
 
 .argumento {
@@ -202,11 +212,13 @@ h1 {
         font-size: 2rem;
         padding: 5px;
     }
-}
 
-.fecha {
-    font-size: 40px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
+    .fecha {
+        font-size: 30px;
+        position: relative;
+        top: -20px;
+        right: 0;
+        text-align: center;
+        z-index: 3;
+    }
 }
