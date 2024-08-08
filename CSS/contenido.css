@@ -27,7 +27,6 @@ body {
     padding: 20px 0;
     box-sizing: border-box;
     position: relative;
-    z-index: 1;
 }
 
 .fecha {
@@ -183,6 +182,12 @@ h1 {
         font-size: 1.5em;
         padding: 5px 0;
     }
+
+    .fecha {
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -213,14 +218,14 @@ h1 {
         padding: 5px;
         position: relative;
         z-index: 1;
-        top: 40px;
+        margin-top: 30px;
     }
 
     .fecha {
-        font-size: 30px;
         position: relative;
         top: -30px;
         text-align: center;
         z-index: 2;
+        margin-bottom: -30px;
     }
 }
