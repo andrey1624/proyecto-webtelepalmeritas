@@ -140,10 +140,10 @@ h1 {
 }
 
 .fecha {
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 20px;
+    top: 20px;
 }
 
 /* Media Queries para dispositivos móviles */
