@@ -143,70 +143,45 @@ h1 {
 
 /* Media Queries para ajustar el diseño en dispositivos móviles */
 @media (max-width: 768px) {
-    .slider, .argumento {
-        width: 90%;
-        height: auto;
-        top: 60px;
-        left: 5%;
-        right: 5%;
-        position: relative; /* Cambiado de absolute a relative para mejor ajuste */
-    }
-
-    .argumento {
-        height: auto;
-        font-size: 18px; /* Ajuste del tamaño de fuente para pantallas más pequeñas */
-        padding: 5px;
-    }
-
-    .beneficios {
-        width: 95%;
-        bottom: 10px;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    .house-button-image, .house-button-icon {
-        width: 50px;
-        height: 50px;
+    .fecha {
+        font-size: 1.2em; /* Reduce el tamaño de la fecha */
+        position: relative; /* Cambia la posición a relativa */
+        text-align: center; /* Centra la fecha */
+        margin-bottom: 5px; /* Añade espacio debajo de la fecha */
     }
 
     .titulo {
-        font-size: 1.5em;
-        padding: 5px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider, .argumento {
-        width: 95%;
-        left: 2.5%;
-        right: 2.5%;
+        font-size: 1.5em; /* Reduce el tamaño del título */
+        text-align: center; /* Centra el texto del título */
+        margin-bottom: 10px; /* Añade espacio debajo del título */
     }
 
     .argumento {
-        font-size: 16px; /* Ajuste del tamaño de fuente para pantallas aún más pequeñas */
-        padding: 5px;
+        position: relative; /* Cambia a posición relativa */
+        width: 90%; /* Ajusta el ancho para dispositivos móviles */
+        left: 5%;
+        right: 5%;
+        margin-top: 10px; /* Añade espacio superior para separar del título */
+    }
+
+    .slider {
+        position: relative; /* Cambia a posición relativa */
+        width: 90%; /* Ajusta el ancho para dispositivos móviles */
+        left: 5%;
+        right: 5%;
+        margin-top: 10px; /* Añade espacio superior para separar del argumento */
     }
 
     .beneficios {
         width: 95%;
         font-size: 16px;
         padding: 5px;
-    }
-
-    .house-button-image, .house-button-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .titulo {
-        font-size: 2rem;
-        padding: 5px 400px;
-
-    
+        position: relative; /* Cambia a posición relativa */
+        margin-top: 10px; /* Añade espacio superior para separar del slider */
     }
 }
-.fecha{
+
+.fecha {
     font-size: 40px;
     position: absolute;
     right: 30px;
