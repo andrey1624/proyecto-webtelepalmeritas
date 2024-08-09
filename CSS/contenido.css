@@ -139,13 +139,6 @@ h1 {
     color: white;
 }
 
-.fecha {
-    font-size: 40px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-}
-
 /* Media Queries para dispositivos móviles */
 @media (max-width: 480px) {
     .fecha {
@@ -157,8 +150,8 @@ h1 {
 
     .titulo {
         font-size: 1.5rem; /* Reduce el tamaño del título */
-        text-align: center; /* Centra el título */
         margin-top: 10px; /* Espacio encima del título */
+        text-align: center; /* Centra el título */
     }
 
     .slider, .argumento {
