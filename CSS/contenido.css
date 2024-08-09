@@ -1,59 +1,59 @@
 body {
     display: flex;
-    flex-direction: column; /* Alinea los contenedores principales en columna */
+    flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
     min-height: auto;
-    background-color: #f0f0f0; /* Fondo para mejor visibilidad */
+    background-color: #f0f0f0;
 }
 
 .conte {
-    width: 99%; /* Ajustado para ocupar casi toda la pantalla */
-    height: 96vh; /* Ajustado para ocupar casi toda la altura de la ventana */
+    width: 99%;
+    height: 96vh;
     border: 3px solid black;
-    position: relative; /* Mantiene la posición relativa para los elementos internos */
-    margin: 10px 10px; /* Espacio entre los contenedores principales */
-    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-    overflow: hidden; /* Asegura que los elementos internos no se salgan del contenedor */
+    position: relative;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
     border-radius: 15px;
 }
 
 .titulo {
-    font-size: 2.5em; /* Ajustado para un mejor diseño */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
+    font-size: 2.5em;
+    width: 100%;
     height: auto;
     text-align: center;
     padding: 20px 0;
-    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    box-sizing: border-box;
 }
 
 .slider {
-    width: 47%; /* Ajustado para un tamaño adecuado dentro del contenedor */
-    height: 53%; /* Altura fija para mejor control del diseño */
+    width: 47%;
+    height: 53%;
     position: absolute;
     top: 100px;
     left: 1%;
     border-radius: 10px;
-    overflow: hidden; /* Esconde cualquier parte de la imagen que se salga del contenedor */
+    overflow: hidden;
 }
 
 .slider img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
-    display: none; /* Oculta todas las imágenes por defecto */
+    object-fit: cover;
+    display: none;
     border-radius: 10px;
 }
 
 .slider img.active {
-    display: block; /* Solo muestra la imagen activa */
+    display: block;
 }
 
 .argumento {
     position: absolute;
-    width: 47%; /* Ajustado para dejar espacio alrededor */
-    height: 53%; /* Altura fija para un diseño consistente */
+    width: 47%;
+    height: 53%;
     top: 100px;
     right: 1%;
     text-align: center;
@@ -61,73 +61,71 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px; /* Ajustado para mejor visibilidad */
+    font-size: 20px;
     border-radius: 10px;
     padding: 10px;
-    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 1.5em; /* Ajustado para mejor diseño */
-    margin: 10px 0; /* Reducido el margen superior e inferior */
+    font-size: 1.5em;
+    margin: 10px 0;
     text-transform: uppercase;
 }
 
 .text-argu {
     width: 100%;
-    line-height: 1.4; /* Reducción del espacio entre líneas */
-    margin: 0; /* Eliminado el margen para evitar separación adicional */
+    line-height: 1.4;
+    margin: 0;
 }
 
 .beneficios {
     position: absolute;
     bottom: 20px;
     text-align: center;
-    width: 90%; /* Ajustado para no salir del contenedor */
+    width: 90%;
     left: 50%;
-    transform: translateX(-50%); /* Centra horizontalmente dentro del contenedor */
-    font-size: 20px; /* Ajustado para mejor diseño */
+    transform: translateX(-50%);
+    font-size: 20px;
     padding: 10px;
-    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    box-sizing: border-box;
 }
 
 .beneficios p {
-    line-height: 1.4; /* Reducción del espacio entre líneas */
-    margin: 0; /* Eliminado el margen para evitar separación adicional */
+    line-height: 1.4;
+    margin: 0;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    position: fixed; /* Fijo en la parte superior izquierda */
+    position: fixed;
     top: 30px;
     left: 30px;
     z-index: 10;
 }
 
-/* Estilo para el botón con imagen */
 .house-button-image {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
+    width: 50px;
     height: 50px;
-    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-size: cover;
     border: none;
     border-radius: 50%;
     transition: background-color 0.3s;
 }
 
 .house-button-image:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Cambia el color de fondo al pasar el mouse */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el botón con ícono Font Awesome */
 .house-button-icon {
-    width: 60px; /* Ajusta el tamaño según sea necesario */
+    width: 60px;
     height: 60px;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 50%;
     color: black;
-    font-size: 24px; /* Tamaño del icono */
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,30 +140,18 @@ h1 {
 
 /* Media Queries para ajustar el diseño en dispositivos móviles */
 @media (max-width: 768px) {
-    .fecha {
-        font-size: 20px; /* Tamaño de fuente más pequeño para la fecha */
-        position: relative; /* Cambiado a relative para que esté por encima del título */
-        top: 0; /* Ajusta el espacio superior según sea necesario */
-        margin-bottom: 5px; /* Espacio entre la fecha y el título */
-    }
-
-    .titulo {
-        font-size: 1.8em; /* Tamaño de fuente para el título */
-        margin-top: 0; /* Elimina el margen superior */
-    }
-
     .slider, .argumento {
         width: 90%;
         height: auto;
         top: 60px;
         left: 5%;
         right: 5%;
-        position: relative; /* Cambiado de absolute a relative para mejor ajuste */
+        position: relative;
     }
 
     .argumento {
         height: auto;
-        font-size: 18px; /* Ajuste del tamaño de fuente para pantallas más pequeñas */
+        font-size: 18px;
         padding: 5px;
     }
 
@@ -186,10 +172,8 @@ h1 {
         padding: 5px 0;
     }
 
-    .slider img {
-        width: 100%; /* Asegura que todas las imágenes ocupen el 100% del contenedor */
-        height: auto; /* Mantiene la proporción de las imágenes */
-        object-fit: cover; /* Asegura que las imágenes no se distorsionen */
+    .fecha {
+        font-size: 35px;
     }
 }
 
@@ -201,7 +185,7 @@ h1 {
     }
 
     .argumento {
-        font-size: 16px; /* Ajuste del tamaño de fuente para pantallas aún más pequeñas */
+        font-size: 16px;
         padding: 5px;
     }
 
@@ -217,13 +201,17 @@ h1 {
     }
 
     .titulo {
-        font-size: 2rem;
-        padding: 5px 0; /* Ajustado para mejor alineación */
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+
+    .fecha {
+        font-size: 30px;
     }
 }
 
 .fecha {
-    font-size: 40px; /* Ajustado a tamaño normal por defecto */
+    font-size: 40px;
     position: absolute;
     right: 30px;
     top: 30px;
