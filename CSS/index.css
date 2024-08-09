@@ -124,3 +124,37 @@
     background-color: #0056b3;
     color: #ffffff;
 }
+
+/* Estilo específico para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%; /* Asegúrate de que se ajuste a pantallas más pequeñas */
+        margin: 20px auto; /* Centrando el contenedor */
+    }
+
+    .slider, .video, .footer, .conte {
+        width: 100%; /* Asegúrate de que los elementos ocupen el 100% del ancho */
+        height: auto; /* Altura automática para evitar desbordamientos */
+    }
+
+    /* Coloca la fecha y el título de manera vertical */
+    .fecha {
+        font-size: 30px; /* Tamaño reducido para la fecha */
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 1.5em; /* Tamaño del título */
+        text-align: center;
+        margin-top: 5px; /* Espacio entre la fecha y el título */
+    }
+
+    .argumento {
+        margin-top: 20px; /* Espacio entre el título y el argumento */
+    }
+}
+
+/* Prevenir el zoom en dispositivos móviles */
+@viewport {
+    zoom: 1.0; /* Desactivar zoom */
+}
