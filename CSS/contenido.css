@@ -142,12 +142,12 @@ h1 {
 }
 
 /* Media Queries para ajustar el diseño en dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .fecha {
-        font-size: 1.2em; /* Reduce el tamaño de la fecha */
+        font-size: 1.2em; /* Reducir el tamaño de la fecha */
         position: relative; /* Cambia la posición a relativa */
         text-align: center; /* Centra la fecha */
-        margin-bottom: 5px; /* Añade espacio debajo de la fecha */
+        margin-bottom: 10px; /* Añade espacio debajo de la fecha */
     }
 
     .titulo {
@@ -157,27 +157,28 @@ h1 {
     }
 
     .argumento {
-        position: relative; /* Cambia a posición relativa */
+        order: 1; /* Asegura que el argumento se coloque después del título */
+        margin-top: 10px; /* Añade espacio superior para separar del título */
         width: 90%; /* Ajusta el ancho para dispositivos móviles */
         left: 5%;
         right: 5%;
-        margin-top: 10px; /* Añade espacio superior para separar del título */
+        position: relative; /* Cambia a posición relativa */
     }
 
     .slider {
-        position: relative; /* Cambia a posición relativa */
+        order: 2; /* Asegura que el slider se coloque después del argumento */
+        margin-top: 10px; /* Añade espacio superior para separar del argumento */
         width: 90%; /* Ajusta el ancho para dispositivos móviles */
         left: 5%;
         right: 5%;
-        margin-top: 10px; /* Añade espacio superior para separar del argumento */
+        position: relative; /* Cambia a posición relativa */
     }
 
     .beneficios {
+        order: 3; /* Asegura que los beneficios se coloquen al final */
         width: 95%;
         font-size: 16px;
         padding: 5px;
-        position: relative; /* Cambia a posición relativa */
-        margin-top: 10px; /* Añade espacio superior para separar del slider */
     }
 }
 
