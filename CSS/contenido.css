@@ -1,3 +1,4 @@
+/* Estilo general */
 body {
     display: flex;
     flex-direction: column;
@@ -138,53 +139,28 @@ h1 {
     color: white;
 }
 
-/* Media Queries para ajustar el diseño en dispositivos móviles */
-@media (max-width: 768px) {
-    .slider, .argumento {
-        width: 90%;
-        height: auto;
-        top: 60px;
-        left: 5%;
-        right: 5%;
-        position: relative;
-    }
+.fecha {
+    font-size: 40px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
 
-    .argumento {
-        height: auto;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    .beneficios {
-        width: 95%;
-        bottom: 10px;
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    .house-button-image, .house-button-icon {
-        width: 50px;
-        height: 50px;
+/* Media Queries para dispositivos móviles */
+@media (max-width: 480px) {
+    .fecha {
+        font-size: 1rem; /* Reduce el tamaño de la fecha */
+        position: static; /* Asegura que la fecha se quede en su lugar normal en el flujo del documento */
+        text-align: center;
+        margin-bottom: 10px; /* Espacio debajo de la fecha */
     }
 
     .titulo {
-        font-size: 1.5em;
-        padding: 5px 0;
-        text-align: center;
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+        text-align: center; /* Centra el título */
+        margin-top: 10px; /* Espacio encima del título */
     }
 
-    .fecha {
-        font-size: 35px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .conte {
-        padding-top: 50px; /* Para dejar espacio para la fecha */
-    }
-}
-
-@media (max-width: 480px) {
     .slider, .argumento {
         width: 95%;
         left: 2.5%;
@@ -206,27 +182,4 @@ h1 {
         width: 40px;
         height: 40px;
     }
-
-    .titulo {
-        font-size: 1.5rem;
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    .fecha {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .conte {
-        padding-top: 50px; /* Para dejar espacio para la fecha */
-    }
-}
-
-.fecha {
-    font-size: 40px;
-    position: absolute;
-    right: 30px;
-    top: 30px;
 }
