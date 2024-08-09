@@ -149,7 +149,7 @@ h1 {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 480px) {
     .fecha {
-        font-size: 1rem; /* Reduce el tamaño de la fecha */
+        font-size: 30px; /* Reduce el tamaño de la fecha */
         position: static; /* Asegura que la fecha se quede en su lugar normal en el flujo del documento */
         text-align: center;
         margin-bottom: 10px; /* Espacio debajo de la fecha */
