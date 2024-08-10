@@ -58,14 +58,15 @@ body {
     .navbar {
         padding: 10px 10px;
         height: auto; /* Permite que la altura se ajuste al contenido */
-        width: 100%;
+        width: 100%; /* Asegura que la barra ocupe todo el ancho de la pantalla */
         border-radius: 0; /* Elimina el borde redondeado para ajustarse mejor en pantallas pequeñas */
+        left: 0;
+        transform: none; /* Evita que la barra se desplace horizontalmente */
     }
 
-    .navbar .button-container button {
-        padding: 10px 20px; /* Reduce el tamaño de los botones en móviles */
-        font-size: 16px; /* Disminuye el tamaño de la fuente en los botones */
-        width: auto; /* Permite que los botones se ajusten al contenido */
+    .navbar .button-container {
+        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
+        justify-content: space-between; /* Asegura que los botones ocupen todo el ancho disponible */
     }
 
     .navbar .logo {
@@ -73,5 +74,4 @@ body {
         height: 50px;
     }
 }
-
 
