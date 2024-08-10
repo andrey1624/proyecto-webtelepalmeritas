@@ -2,137 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     padding: 2rem;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
-}
-
-.fixed-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(fondo\ html.jpg);
-    background-position: center;
-    z-index: -1; /* Envía la imagen al fondo */
-}
-
-.contenedor {
-    max-width: 1200px; /* Limita el ancho máximo */
-    width: 100%; /* Asegura que el ancho sea del 100% */
-    height: 394px; /* Ajustado para coincidir con la altura del slider */
-    margin: 110px auto; /* Centrar el contenedor */
-    position: relative;  
-    border: 3px solid black;
-    border-radius: 15px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    position: relative;
-    width: 100%; /* Asegura que el slider ocupe el 100% del contenedor */
-    height: auto; /* Altura automática para mejor ajuste */
-    max-width: 570px; /* Limita el ancho máximo */
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.slider img {
-    width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slider img.active {
-    opacity: 1;
-}
-
-.video {
-    width: 100%; /* Asegura que el video ocupe el 100% del contenedor */
-    height: auto; /* Altura automática para mejor ajuste */
-    max-width: 570px; /* Limita el ancho máximo */
-    background-color: #010101;
-    margin: 20px; 
-    border-radius: 20px;
-}
-
-.footer {
-    width: 30%;
-    height: 50px; /* Ajusta la altura según sea necesario */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-top: -100px;
-    margin-left: 40px;
-}
-
-.footer-button {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 60px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    color: white; /* Color del texto blanco */
-}
-
-.footer-button.facebook {
-    background-color: #4267B2;
-}
-
-.footer-button.facebook:hover {
-    background-color: #365899;
-}
-
-.footer-button.tiktok {
-    background-color: #010101;
-}
-
-.footer-button.tiktok:hover {
-    background-color: #181818;
-}
-
-.conte {
-    width: 25%;
-    height: 50px; /* Ajusta la altura según sea necesario */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-top: -55px;
-    margin-left: 930px;
-}
-
-.footerr-buttonn {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 90px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    color: #007BFF; /* Color del texto blanco */
-    transition: background-color 0.3s;
-}
-
-.footerr-buttonn.cont {
-    background-color: #ffffff;
-}
-
-.footerr-buttonn.cont:hover {
-    background-color: #0056b3;
-    color: #ffffff;
+    /* Para permitir el desplazamiento del contenido sin interferir con la navbar */
 }
 
 .navbar {
@@ -183,57 +53,25 @@ body {
     margin-top: 5px; /* Mueve el logo a la derecha */
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    .contenedor {
-        width: 90%; /* Asegúrate de que se ajuste a pantallas más pequeñas */
-        margin: 20px auto; /* Centrando el contenedor */
-    }
-
-    .slider, .video, .footer, .conte {
-        width: 100%; /* Asegúrate de que los elementos ocupen el 100% del ancho */
-        height: auto; /* Altura automática para evitar desbordamientos */
-    }
-
-    /* Coloca la fecha y el título de manera vertical */
-    .fecha {
-        font-size: 20px; /* Tamaño reducido para la fecha */
-        text-align: center;
-    }
-
-    .titulo {
-        font-size: 1.5em; /* Tamaño del título */
-        text-align: center;
-        margin-top: 5px; /* Espacio entre la fecha y el título */
-    }
-
-    .argumento {
-        margin-top: 20px; /* Espacio entre el título y el argumento */
-    }
-
-    .footer {
-        flex-direction: column; /* Cambia la dirección a columna en móvil */
-        align-items: center; /* Centra los elementos */
-    }
-
-    .footer-button {
-        padding: 10px 20px; /* Ajustado para mejor ajuste en móviles */
-    }
-
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column; /* Cambia la dirección a columna en móvil */
-        align-items: center; /* Centra los elementos */
-        padding: 10px; /* Ajustado para mejor ajuste en móviles */
+        padding: 10px 10px;
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        width: 100%;
+        border-radius: 0; /* Elimina el borde redondeado para ajustarse mejor en pantallas pequeñas */
     }
 
     .navbar .button-container button {
-        padding: 10px; /* Ajustado para mejor ajuste en móviles */
-        margin-bottom: 10px; /* Espacio entre botones en móvil */
-        width: auto; /* Permite que el botón ajuste su tamaño */
+        padding: 10px 20px; /* Reduce el tamaño de los botones en móviles */
+        font-size: 16px; /* Disminuye el tamaño de la fuente en los botones */
+        width: auto; /* Permite que los botones se ajusten al contenido */
+    }
+
+    .navbar .logo {
+        width: 50px;
+        height: 50px;
     }
 }
 
-/* Prevenir el zoom en dispositivos móviles */
-@viewport {
-    zoom: 1.0; /* Desactivar zoom */
-}
+
