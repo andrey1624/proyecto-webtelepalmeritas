@@ -85,9 +85,11 @@ p {
 
 .contenedor-fijo {
     position: fixed;
-    margin-top: 100px;
-    width: 100%;
-    height: 75%;
+    top: 50%; /* Coloca el contenedor en el centro vertical de la pantalla */
+    left: 50%; /* Coloca el contenedor en el centro horizontal de la pantalla */
+    transform: translate(-50%, -50%); /* Ajusta el contenedor para que esté centrado */
+    width: 80%; /* Ajusta el ancho del contenedor */
+    height: 75%; /* Ajusta la altura del contenedor */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -129,11 +131,14 @@ li {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombra de separación */
     font-size: 18px;
 }
+
 /* Ajustes específicos para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
-.contenedor-fijo{
-    left: -40px;
-    top: 30px;
-}
-
+    .contenedor-fijo {
+        width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+        height: 70%; /* Ajusta la altura para pantallas pequeñas */
+        top: 50%; /* Asegura que el contenedor esté centrado verticalmente */
+        left: 50%; /* Asegura que el contenedor esté centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Mantiene el contenedor centrado */
+    }
 }
