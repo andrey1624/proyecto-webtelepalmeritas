@@ -97,6 +97,7 @@ p {
 }
 
 .contenido {
+    position:fixed;
     width: 80%;
     height: 100%;
     overflow-y: auto;
