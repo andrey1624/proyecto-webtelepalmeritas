@@ -137,7 +137,7 @@ li {
     .contenedor-fijo {
         width: 90%; /* Ajusta el ancho para pantallas pequeñas */
         height: 90%; /* Ajusta la altura para pantallas pequeñas */
-        margin-top: 10%; /* Asegura que el contenedor esté centrado verticalmente */
+        margin-top: 9%; /* Asegura que el contenedor esté centrado verticalmente */
         left: 50%; /* Asegura que el contenedor esté centrado horizontalmente */
         transform: translate(-50%, -50%); /* Mantiene el contenedor centrado */
     }
