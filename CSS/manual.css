@@ -85,11 +85,11 @@ p {
 
 .contenedor-fijo {
     position: fixed;
-    top: 50%; /* Coloca el contenedor en el centro vertical de la pantalla */
+    top: 57%; /* Coloca el contenedor en el centro vertical de la pantalla */
     left: 50%; /* Coloca el contenedor en el centro horizontal de la pantalla */
     transform: translate(-50%, -50%); /* Ajusta el contenedor para que esté centrado */
     width: 80%; /* Ajusta el ancho del contenedor */
-    height: 75%; /* Ajusta la altura del contenedor */
+    height: 80%; /* Ajusta la altura del contenedor */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -140,5 +140,8 @@ li {
         top: 50%; /* Asegura que el contenedor esté centrado verticalmente */
         left: 50%; /* Asegura que el contenedor esté centrado horizontalmente */
         transform: translate(-50%, -50%); /* Mantiene el contenedor centrado */
+    }
+    .contenido{
+        width: auto;
     }
 }
