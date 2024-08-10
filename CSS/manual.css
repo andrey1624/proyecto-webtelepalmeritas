@@ -138,7 +138,7 @@ li {
         width: 90%; /* Ajusta el ancho para pantallas pequeñas */
         height: 70%; /* Ajusta la altura para pantallas pequeñas */
         top: 50%; /* Asegura que el contenedor esté centrado verticalmente */
-        left: 40%; /* Asegura que el contenedor esté centrado horizontalmente */
+        left: 50%; /* Asegura que el contenedor esté centrado horizontalmente */
         transform: translate(-50%, -50%); /* Mantiene el contenedor centrado */
     }
 }
