@@ -132,7 +132,7 @@ li {
 /* Ajustes específicos para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
 .contenedor-fijo{
-    left: -10px;
+    left: -40px;
     top: 30px;
 }
 
