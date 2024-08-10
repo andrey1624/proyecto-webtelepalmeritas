@@ -58,7 +58,7 @@ body {
     .navbar {
         padding: 10px 10px;
         height: auto;
-        width: 80%;
+        width: 90%;
         border-radius: 0;
         left: 50%; /* Centra la navbar horizontalmente */
         transform: translateX(-50%);
