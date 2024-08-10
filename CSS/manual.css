@@ -136,7 +136,7 @@ li {
 @media only screen and (max-width: 600px) {
     .contenedor-fijo {
         width: 90%; /* Ajusta el ancho para pantallas pequeñas */
-        height: 75%; /* Ajusta la altura para pantallas pequeñas */
+        height: 80%; /* Ajusta la altura para pantallas pequeñas */
         margin-top: 7%; /* Asegura que el contenedor esté centrado verticalmente */
         left: 50%; /* Asegura que el contenedor esté centrado horizontalmente */
         transform: translate(-50%, -50%); /* Mantiene el contenedor centrado */
