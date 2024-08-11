@@ -150,39 +150,40 @@ h1 {
 /* Media Queries para ajustar el diseño en dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .conte {
-        width: 98%;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .fecha {
-        margin-right: 10px;
         font-size: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 20px; /* Espacio debajo de la fecha */
     }
 
     .titulo {
-        font-size: 40px;
-        margin-top: 10px; /* Espacio pequeño arriba del título */
-        margin-bottom: 20px; /* Espacio debajo del título */
+        font-size: 36px;
+        width: 100%;
+        margin-bottom: 50px; /* Espacio debajo del título */
+        text-align: center;
     }
 
     .argumento {
-        width: 95%;
-        margin-top: 0; /* Sin espacio adicional encima del argumento */
-        margin-bottom: 20px; /* Espacio debajo del argumento */
+        width: 100%;
+        margin-top: 20px; /* Espacio debajo del título */
+        padding-bottom: 20px; /* Espacio debajo del argumento */
     }
 
+    /* Posiciona el slider donde desees, ajustando la distancia con el argumento */
     .slider {
-        width: 95%;
-        margin-top: 0; /* Sin espacio adicional encima del slider */
-        height: 40%;
-        margin-bottom: 20px; /* Espacio debajo del slider */
+        width: 100%;
+        margin-top: 70px; /* Espacio entre el slider y el argumento (o cualquier otro elemento) */
+        padding-bottom: 20px; /* Espacio debajo del slider */
     }
 
     .beneficios {
-        width: 95%;
-        margin-top: 0; /* Sin espacio adicional encima de los beneficios */
-        height: 40%;
-        margin-bottom: 20px; /* Espacio debajo de los beneficios */
+        width: 100%;
+        margin-top: 20px; /* Espacio debajo del slider */
     }
 }
