@@ -146,6 +146,7 @@ h1 {
     .conte {
         width: 98%;
         padding: 10px;
+        align-items: center;
     }
 
     .fecha {
@@ -167,15 +168,15 @@ h1 {
         width: 95%;
         height: 200px;
         position: relative;
-        left: 0;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .argumento {
         width: 95%;
-        position: relative;
-        margin-top: 20px; /* 20px debajo del título */
-        left: 0;
+        position: absolute;
+        margin-top: -30px; /* 20px debajo del título */
+        left: 0%;
+        padding: 0%;
     }
 
     .beneficios {
