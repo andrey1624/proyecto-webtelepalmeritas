@@ -47,10 +47,10 @@
     }
 
     .mision {
-        top: 110px; /* Mueve la misión más abajo */
+        top: 180px; /* Mueve la misión más abajo */
     }
 
     .vision {
-        top: 130px; /* Mueve la visión más abajo */
+        top: 230px; /* Mueve la visión más abajo */
     }
 }
