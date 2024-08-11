@@ -145,6 +145,7 @@ h1 {
 @media only screen and (max-width: 600px) {
     .conte {
         width: 98%;
+        height: 900px;
         padding: 10px;
         align-items: center;
     }
@@ -166,16 +167,17 @@ h1 {
 
     .slider {
         width: 95%;
-        height: 260px;
-        position: relative;
-        margin-top: 40px;
+        height: 250px;
+        position: absolute;
+        margin-top: 200px;
+        left: 10px;
     }
 
     .argumento {
         width: 95%;
         position: absolute;
         margin-top: -30px; /* 20px debajo del título */
-        left: 0%;
+        left: 10px;
         padding: 0%;
     }
 
@@ -183,6 +185,6 @@ h1 {
         width: 95%;
         position: relative;
         margin-top: 20px; /* 20px debajo del slider */
-        left: 0;
+        left: 10px;
     }
 }
