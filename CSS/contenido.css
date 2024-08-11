@@ -148,16 +148,24 @@ h1 {
         height: 900px;
         padding: 10px;
         align-items: center;
+        flex-direction: column;
+
     }
 
     .fecha {
-        margin-right: 10px;
         font-size: 30px;
+        position: relative;
+        z-index: 10;
+        left: calc(100% - 150px); /* Ajusta el valor para centrarlo mejor en el contenedor */
+        margin-left: auto; /* Esto asegura que se empuje a la derecha */
+        top: -110px;
     }
+    
 
     .titulo {
         margin-top: 40px;
         font-size: 25px;
+        position: relative;
     }
 
     h1 {
@@ -168,15 +176,15 @@ h1 {
     .slider {
         width: 95%;
         height: 250px;
-        position: absolute;
-        margin-top: 200px;
+        margin-top: -10px;
         left: 10px;
+        position: relative;
     }
 
     .argumento {
         width: 95%;
-        position: absolute;
-        margin-top: -30px; /* 20px debajo del título */
+        position: relative;
+        margin-top: -550px; /* 20px debajo del título */
         left: 10px;
         padding: 0%;
     }
