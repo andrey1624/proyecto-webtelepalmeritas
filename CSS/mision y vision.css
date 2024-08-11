@@ -14,7 +14,7 @@
 
 /* Estilos para pantallas grandes */
 .mision, .vision {
-    background-color: rgb(219, 211, 211);
+    background-color: rgb(255, 255, 255);
     width: 25rem;
     height: 20rem;
     text-align: center;
@@ -51,6 +51,6 @@
     }
 
     .vision {
-        top: 230px; /* Mueve la visión más abajo */
+        top: 280px; /* Mueve la visión más abajo */
     }
 }
