@@ -21,8 +21,6 @@
     margin: 100px;
     position: relative;
     position: fixed;
-
-
 }
 
 .imgContainer {
@@ -94,4 +92,52 @@
     color: black;
     font-size: 30px;
     transition: all 0.7s ease;
+}
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en una columna */
+    position: fixed; /* Mantiene el contenedor en la pantalla */
+    left: 0;
+    width: 92%;
+    height: 80%;
+    background-color: aqua;
+    margin: 100px 20px 0 20px;
+    
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en una columna */
+    width: 100%;
+    height: auto;
+  }
+
+  .slide_div {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en una columna dentro de cada slide_div */
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    margin-bottom: 20px; /* Espacio entre cada .slide_div */
+    flex-shrink: 0; /* Evita que los sliders se compriman */
+  }
+
+  .slider_button {
+    display: flex;
+    flex-direction: column; /* Apila el texto y la imagen en una columna dentro del botón */
+    align-items: center; /* Centra el contenido horizontalmente */
+    border: none; /* Quita el borde del botón si es necesario */
+    background: transparent; /* Asegura que el botón no tenga fondo si es necesario */
+    padding: 10px; /* Espaciado interno para el botón */
+  }
+
+  .slider_button img {
+    max-width: 100%; /* Asegura que la imagen no se salga del botón */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .slider_button p {
+    margin: 0; /* Quita el margen alrededor del texto */
+    text-align: center; /* Centra el texto dentro del botón */
+  }
 }
