@@ -30,7 +30,7 @@
     gap: 50px;
 }
 
-.slide_div {
+.slide_div .slide_divv .slide_divvv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +101,10 @@
     position: fixed; /* Mantiene el contenedor en la pantalla */
     left: 0;
     width: 92%;
-    height: 80%;
-    background-color: aqua;
+    height: 83%;
     margin: 100px 20px 0 20px;
-    
+    justify-content: center; /* Centra los sliders verticalmente */
+    align-items: center; /* Centra los sliders horizontalmente */
   }
 
   .imgContainer {
@@ -112,14 +112,20 @@
     flex-direction: column; /* Apila los elementos en una columna */
     width: 100%;
     height: auto;
+    align-items: center; /* Centra los contenidos dentro de imgContainer */
   }
 
-  .slide_div {
+  /* Estilo aplicado a todos los contenedores de sliders */
+  .slide_div, .slide_divv, .slide_divvv {
     display: flex;
     flex-direction: column; /* Apila los elementos en una columna dentro de cada slide_div */
     width: 100%; /* Ocupa todo el ancho disponible del contenedor */
-    margin-bottom: 20px; /* Espacio entre cada .slide_div */
+    margin-top: 400px; /* Mueve los sliders más abajo */
+    margin-bottom: 10px; /* Reduce el espacio entre cada .slide_div */
     flex-shrink: 0; /* Evita que los sliders se compriman */
+    height: 24%; /* Reduce ligeramente la altura de cada slider */
+    justify-content: center; /* Centra el contenido dentro de cada slider verticalmente */
+    align-items: center; /* Centra el contenido dentro de cada slider horizontalmente */
   }
 
   .slider_button {
