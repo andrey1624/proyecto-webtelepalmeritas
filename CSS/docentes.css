@@ -24,7 +24,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     border: 3px solid black;
     box-sizing: border-box;
     border-radius: 15px;
@@ -123,16 +123,19 @@ body {
     }
 
     .text {
-        width: 80%; /* Ajusta el ancho del texto al 80% del contenedor */
+        width: auto; /* Ajusta el ancho automáticamente */
+        max-width: 80%; /* Limita el ancho máximo al 80% del contenedor */
         margin: 0; /* Elimina márgenes adicionales */
-        padding: 0.5rem; /* Reduce el padding para pantallas pequeñas */
-        font-size: 25px; /* Reduce el tamaño del texto */
+        padding: 0.5rem; /* Mantiene un padding reducido */
+        font-size: 25px; /* Ajusta el tamaño del texto */
         text-align: center; /* Centra el texto */
-        min-height: 150px; /* Define una altura mínima uniforme para el texto */
+        min-height: auto; /* Elimina la altura mínima para permitir que el texto crezca según su contenido */
         display: flex;
         flex-direction: column;
         justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
     }
+    
 
     .text p{
         font-size: 25px;
