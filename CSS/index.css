@@ -142,7 +142,7 @@
         width: 100%; /* Ancho completo del contenedor */
         height: 100%; /* Ajusta la altura automáticamente */
         max-width: 570px; /* Limita el ancho máximo */
-        min-height: 270px; /* Asegura una altura mínima para que los contenedores se muestren */
+        min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
         margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
     }
 
