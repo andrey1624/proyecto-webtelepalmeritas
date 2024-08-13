@@ -164,5 +164,8 @@
         text-align: center; /* Centra el texto dentro del botón */
         flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
         margin: 0 5px; /* Añade un pequeño margen entre los botones */
+                display: flex;
+        justify-content: center; /* Centra el contenido dentro del botón */
+        align-items: center; /* Alinea verticalmente el contenido del botón */
     }
 }
