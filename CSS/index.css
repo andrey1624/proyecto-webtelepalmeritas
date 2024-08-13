@@ -131,7 +131,7 @@
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
-        margin: 140px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 130px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
         flex-direction: column; /* Organiza en columna */
         align-items: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Añade padding para evitar que el contenido colapse */
