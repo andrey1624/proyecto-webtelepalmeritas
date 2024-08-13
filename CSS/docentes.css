@@ -47,13 +47,13 @@ body {
 }
 .text {
     flex: 1;
-    padding: 2rem;
+    width: auto;
     text-align: center;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(12px);
-    margin-left: 2rem;
+   
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -126,8 +126,16 @@ body {
         width: 80%; /* Ajusta el ancho del texto al 80% del contenedor */
         margin: 0; /* Elimina márgenes adicionales */
         padding: 0.5rem; /* Reduce el padding para pantallas pequeñas */
-        font-size: 20px; /* Reduce el tamaño del texto */
+        font-size: 25px; /* Reduce el tamaño del texto */
         text-align: center; /* Centra el texto */
+        min-height: 150px; /* Define una altura mínima uniforme para el texto */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente */
+    }
+
+    .text p{
+        font-size: 25px;
     }
 
     .prev, .next {
