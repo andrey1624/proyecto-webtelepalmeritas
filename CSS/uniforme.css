@@ -1,99 +1,142 @@
 .fixed-image {
-    position: fixed;    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(fondo\ html.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Envía la imagen al fondo */
-    filter: blur(10px);
+  position: fixed;    
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(fondo\ html.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Envía la imagen al fondo */
+  filter: blur(10px);
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* Centra los sliders horizontalmente */
-    margin: 100px;
-    width: 1100px;
-    height: 500px;
-    position: fixed;
+  width: 1100px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
 
 .imgContainer {
-    display: flex;
-    justify-content: center; /* Centra el grupo de sliders horizontalmente */
-    align-items: center;
-    gap: 50px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-.slide_div, .slide_divv, .slide_divvv {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centra los sliders dentro de cada contenedor */
-    flex-direction: column;
+.slide_div,
+.slide_divvv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide_divv {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido */
+  flex-direction: column;
+  width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 .slider_button {
-    width: 250px;
-    height: 370px;
-    transition: all 0.7s ease;
-    border-radius: 20px;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    margin: 0 auto; /* Asegura que cada slider esté centrado en su contenedor */
+  width: 250px;
+  height: 370px;
+  transition: all 0.7s ease;
+  border-radius: 20px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* Ajustes específicos para pantallas pequeñas (móviles) */
+.slider_button:focus {
+  outline: none;
+  width: 320px;
+  height: 470px;
+  border: 3px solid black;
+}
+
+.slider_button:hover {
+  background-color: rgba(39, 39, 39, 0.2);
+}
+
+.slider_button img {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  transition: all 0.7s ease;
+  position: relative;
+  top: 30px;
+}
+
+.slider_button:focus img {
+  width: 90%;
+  height: auto;
+  position: relative;
+  top: 30px;
+}
+
+.slider_button:focus p {
+  font-size: 37px;
+  position: absolute;
+  top: 13px;
+}
+
+.slider_button p {
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  margin: 0;
+  color: black;
+  font-size: 30px;
+  transition: all 0.7s ease;
+}
+
+/* Estilos para pantallas pequeñas (disposición ajustada) */
 @media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    width: 100%;
-    height: auto;
-  }
-
   .imgContainer {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    justify-content: center;
+      flex-direction: column; /* Cambia a columna para apilar los sliders */
+      align-items: flex-start; /* Alinea los elementos a la izquierda */
   }
 
-  .slide_div, .slide_divv, .slide_divvv {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center; /* Asegura que los sliders estén centrados en móviles */
+  .slide_div, .slide_divvv {
+      display: flex; /* Asegura que los elementos sean flexibles */
+      justify-content: flex-start; /* Alinea los sliders a la izquierda */
+      margin-bottom: 10px; /* Espacio entre filas */
+      width: 100%; /* Ocupa todo el ancho */
+  }
+
+  .slide_divv {
+      display: flex; /* Asegura que el slider del medio esté centrado */
+      justify-content: flex-start; /* Alinea el slider del medio a la izquierda */
+      width: 100%; /* Ocupa todo el ancho */
+      margin-top: 10px; /* Espacio encima del slider del medio */
   }
 
   .slider_button {
-    width: 220px; /* Ajusta el tamaño del slider en móviles */
-    height: 330px;
-    margin: 0 auto; /* Centra cada slider */
+      width: 180px; /* Ajusta el tamaño de los botones en móviles */
+      height: 250px; /* Ajusta la altura */
+      margin: 0; /* Sin margen lateral */
   }
 
   .slider_button img {
-    width: 85%;
-    height: auto;
-    top: 20px;
+      width: 90%; /* Ajusta el tamaño de la imagen */
   }
 
   .slider_button p {
-    font-size: 28px;
-    top: 13px;
-    left: 50%;
-    transform: translateX(-50%); /* Centra el texto dentro del slider */
+      font-size: 18px; /* Ajusta el tamaño de la fuente */
   }
 }
+  
