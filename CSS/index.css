@@ -131,7 +131,7 @@
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
-        margin: 100px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 140px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
         flex-direction: column; /* Organiza en columna */
         align-items: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Añade padding para evitar que el contenido colapse */
@@ -142,7 +142,7 @@
         width: 100%; /* Ancho completo del contenedor */
         height: 100%; /* Ajusta la altura automáticamente */
         max-width: 570px; /* Limita el ancho máximo */
-        min-height: 230px; /* Asegura una altura mínima para que los contenedores se muestren */
+        min-height: 270px; /* Asegura una altura mínima para que los contenedores se muestren */
         margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
     }
 
