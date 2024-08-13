@@ -12,28 +12,28 @@
 }
 
 .container {
-    width: 1100px;
-    height: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centra los sliders horizontalmente */
     margin: 100px;
-    position: relative;
+    width: 1100px;
+    height: 500px;
     position: fixed;
 }
 
 .imgContainer {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el grupo de sliders horizontalmente */
     align-items: center;
     gap: 50px;
+    width: 100%;
 }
 
-.slide_div .slide_divv .slide_divvv {
+.slide_div, .slide_divv, .slide_divvv {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centra los sliders dentro de cada contenedor */
     flex-direction: column;
 }
 
@@ -50,49 +50,10 @@
     position: relative;
     text-align: center;
     cursor: pointer;
+    margin: 0 auto; /* Asegura que cada slider esté centrado en su contenedor */
 }
 
-.slider_button:focus {
-    outline: none;
-    width: 320px;
-    height: 470px;
-    border: 3px solid black;
-}
-
-.slider_button:hover {
-    background-color: rgba(39, 39, 39, 0.2);
-}
-
-.slider_button img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-    transition: all 0.7s ease;
-    position: relative;
-    top: 30px;
-}
-
-.slider_button:focus img {
-    width: 90%;
-    height: auto;
-    position: relative;
-    top: 30px;
-}
-
-.slider_button:focus p {
-    font-size: 37px;
-    position: absolute;
-    top: 13px;
-}
-.slider_button p {
-    position: absolute;
-    top: 13px;
-    width: 100%;
-    margin: 0;
-    color: black;
-    font-size: 30px;
-    transition: all 0.7s ease;
-}
+/* Ajustes específicos para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -108,29 +69,29 @@
     gap: 20px;
     width: 100%;
     justify-content: center;
-    align-items: center; /* Centra los sliders verticalmente */
   }
 
   .slide_div, .slide_divv, .slide_divvv {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center; /* Centra los sliders horizontalmente */
+    justify-content: center; /* Asegura que los sliders estén centrados en móviles */
   }
 
   .slider_button {
-    width: 180px; /* Tamaño más pequeño para los sliders */
-    height: 270px; /* Tamaño más pequeño para los sliders */
-    margin: 0 auto; /* Centra cada slider horizontalmente */
+    width: 220px; /* Ajusta el tamaño del slider en móviles */
+    height: 330px;
+    margin: 0 auto; /* Centra cada slider */
   }
 
   .slider_button img {
-    width: 80%; /* Ajusta el tamaño de las imágenes dentro del slider */
+    width: 85%;
     height: auto;
+    top: 20px;
   }
 
   .slider_button p {
-    font-size: 24px; /* Ajusta el tamaño del texto */
+    font-size: 28px;
     top: 13px;
     left: 50%;
     transform: translateX(-50%); /* Centra el texto dentro del slider */
