@@ -119,13 +119,18 @@
   }
 
   .slider_button {
-    width: 220px; /* Ajusta el tamaño del slider en móviles */
-    height: 330px;
+    width: 180px; /* Tamaño más pequeño para los sliders */
+    height: 270px; /* Tamaño más pequeño para los sliders */
     margin: 0 auto; /* Centra cada slider horizontalmente */
   }
 
+  .slider_button img {
+    width: 80%; /* Ajusta el tamaño de las imágenes dentro del slider */
+    height: auto;
+  }
+
   .slider_button p {
-    font-size: 28px;
+    font-size: 24px; /* Ajusta el tamaño del texto */
     top: 13px;
     left: 50%;
     transform: translateX(-50%); /* Centra el texto dentro del slider */
