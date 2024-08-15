@@ -98,7 +98,7 @@
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%; /* Estira el contenedor al ancho de la pantalla */
-        height: 900px; /* Permite que la altura del contenedor se ajuste automáticamente */
+        height: 800px; /* Permite que la altura del contenedor se ajuste automáticamente */
         padding-top: 80px; /* Reduce el padding superior */
     }
 
@@ -114,7 +114,7 @@
     }
 
     .slide img {
-        width: 60%; /* Reduce el tamaño de la imagen al 50% del contenedor */
+        width: 50%; /* Reduce el tamaño de la imagen al 50% del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
         margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen del texto */
     }
