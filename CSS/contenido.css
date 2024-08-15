@@ -127,7 +127,7 @@
 @media only screen and (max-width: 600px) {
     .conte {
         width: 95%; /* Ocupa casi todo el ancho */
-        height: 100%;
+        height: auto;
         padding: 10px 10px;
         display: flex;
         flex-direction: column;
@@ -169,7 +169,7 @@
         width: 95%;
         height: 400px; /* Altura del slider */
         margin-top: 0; /* Sin margen superior */
-        margin-bottom: 20px; /* Espacio debajo del slider */
+        margin-bottom: 60px; /* Espacio debajo del slider */
         position: relative;
         overflow: hidden; /* Asegura que el contenido del slider no sobresalga */
         border-radius: 10px; /* Bordes redondeados */
@@ -179,7 +179,7 @@
 
     .slider img {
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del slider */
-        height: auto; /* Ajusta la altura automáticamente */
-        object-fit: contain; /* Muestra la imagen completa sin recortarla */
+        height: 100%; /* Asegura que la imagen ocupe toda la altura del slider */
+        object-fit: cover; /* Expande la imagen para cubrir todo el slider */
     }
 }
