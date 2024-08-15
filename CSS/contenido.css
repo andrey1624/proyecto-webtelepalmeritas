@@ -63,7 +63,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: aquamarine;
+
     position: absolute;
     right: 1%;
     top: 150px;
@@ -88,7 +88,7 @@ h1 {
     font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
-    background-color: aquamarine;
+ 
     position: absolute;
     right: 1%;
     top: calc(150px + 20px + 180px + 20px); /* Posiciona los beneficios más cerca del argumento */
@@ -141,59 +141,69 @@ h1 {
     color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    .conte {
-        width: 98%;
-        height: auto;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+        .conte {
+            width: 100%; /* Cambia a 100% para que ocupe todo el ancho */height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+           
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
 
-    .fecha {
-        font-size: 30px;
-        position: relative;
-        z-index: 10;
-        align-self: flex-end; /* Posiciona la fecha en la esquina superior derecha */
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
-    .titulo {
-        margin-top: 20px; /* Ajusta el espacio superior para que quede debajo de la fecha */
-        font-size: 25px;
-        text-align: center;
-        position: relative;
-        width: 100%;
-    }
-
-    h1 {
-        margin-top: 30px;
-        font-size: 22px;
-    }
+        .fecha {
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
     
-    .argumento {
-        width: 95%;
-        position: relative;
-        margin-top: 20px; /* 20px debajo del título */
-        text-align: center;
-        padding: 10px;
-        background-color: aquamarine; /* Asegura que el fondo se mantenga visible */
-    }
+        }
 
-    .slider {
-        width: 95%;
-        height: 250px;
-        margin-top: 20px; /* 20px debajo del argumento */
-        position: relative;
-    }
+        .titulo {
+            font-size: 28px; /* Aumenta el tamaño del título para más visibilidad */
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 50px; /* Más espacio debajo de la fecha */
+            margin-bottom: 10px; /* Añade un margen inferior */
 
-    .beneficios {
-        width: 95%;
-        position: relative;
-        margin-top: 20px; /* 20px debajo del slider */
-        padding: 10px;
-        background-color: aquamarine;
+            font-weight: bold; /* Hacer que el título sea más destacado */
+        }
+
+        .argumento {
+            width: 95%;
+            margin-bottom: 20px; /* Espacio debajo del argumento */
+            position: relative;
+            text-align: center; /* Centra el texto */
+            font-size: 18px; /* Ajusta el tamaño del texto del argumento */
+           
+            line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+            margin-top: -180px;
+        }
+
+        .slider {
+            width: 95%;
+            height: 300px; /* Aumenta la altura para mayor impacto visual */
+            margin-top: 0; /* Sin margen superior */
+            margin-bottom: 20px; /* Espacio debajo del slider */
+            position: relative;
+            overflow: hidden; /* Asegura que el contenido no sobresalga */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        .beneficios {
+            width: 95%;
+            margin-bottom: 20px; /* Espacio debajo de los beneficios */
+            position: relative;
+            text-align: center; /* Centra el texto de beneficios */
+            font-size: 18px; /* Ajusta el tamaño del texto de beneficios */
+         
+            line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+        }
     }
-}
