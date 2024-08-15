@@ -98,8 +98,8 @@
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%; /* Estira el contenedor al ancho de la pantalla */
-        height: auto; /* Permite que la altura del contenedor se ajuste automáticamente */
-        padding-top: 100px; /* Reduce el padding superior */
+        height: 900px; /* Permite que la altura del contenedor se ajuste automáticamente */
+        padding-top: 80px; /* Reduce el padding superior */
     }
 
     .slider {
@@ -131,6 +131,7 @@
         flex-direction: column;
         justify-content: center; /* Centra el contenido verticalmente */
         align-items: center; /* Centra el contenido horizontalmente */
+        height: auto;
     }
 
     .text p {
