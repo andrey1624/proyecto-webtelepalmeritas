@@ -114,7 +114,7 @@
     }
 
     .slide img {
-        width: 50%; /* Reduce el tamaño de la imagen al 50% del contenedor */
+        width: 70%; /* Reduce el tamaño de la imagen al 50% del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
         margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen del texto */
     }
