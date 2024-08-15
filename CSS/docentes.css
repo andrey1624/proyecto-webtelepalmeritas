@@ -62,6 +62,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     border-radius: 10px; /* Bordes redondeados */
     margin-right: 50px;
+
 }
 
 .prev, .next {
@@ -97,12 +98,12 @@
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%; /* Estira el contenedor al ancho de la pantalla */
-        height: 600px; /* Ajusta la altura del contenedor */
-        padding-top: 200px; /* Reduce el padding superior */
+        height: auto; /* Permite que la altura del contenedor se ajuste automáticamente */
+        padding-top: 100px; /* Reduce el padding superior */
     }
 
     .slider {
-        height: 600px; /* Ajusta la altura del slider */
+        height: auto; /* Permite que la altura del slider se ajuste automáticamente */
     }
 
     .slide {
@@ -122,18 +123,17 @@
         width: auto; /* Ajusta el ancho automáticamente */
         max-width: 80%; /* Limita el ancho máximo al 80% del contenedor */
         margin: 0; /* Elimina márgenes adicionales */
-        padding: 0.5rem; /* Mantiene un padding reducido */
+        padding: 0; /* Mantiene un padding reducido */
         font-size: 25px; /* Ajusta el tamaño del texto */
         text-align: center; /* Centra el texto */
-        min-height: auto; /* Elimina la altura mínima para permitir que el texto crezca según su contenido */
+        overflow: visible; /* Asegura que todo el texto se muestre */
         display: flex;
         flex-direction: column;
         justify-content: center; /* Centra el contenido verticalmente */
         align-items: center; /* Centra el contenido horizontalmente */
     }
-    
 
-    .text p{
+    .text p {
         font-size: 25px;
     }
 
