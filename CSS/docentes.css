@@ -97,7 +97,6 @@
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
     .container {
-        position: fixed;
         width: 100%; /* Estira el contenedor al ancho de la pantalla */
         height: 900px; /* Permite que la altura del contenedor se ajuste automáticamente */
         padding-top: 80px; /* Reduce el padding superior */
