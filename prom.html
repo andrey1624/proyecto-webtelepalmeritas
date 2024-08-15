@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>  
     <link rel="stylesheet" href="CSS/styles.css"> <link rel="stylesheet" href="CSS/prom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,88 +25,52 @@
         <div><img src="logo-colegio.png" alt="" class="logo"></div>
     </header>
 
-    <div class="container">
-        <div class="slider">  
-        <div class="slides">  
-        <!-- Imágenes para el slider -->  
-   
-        <div class="slide"><img src="img proms/IMG2023.jpeg" alt="Imagen 2"><p>PROM 2023</p></div>              
-        <div class="slide"><img src="img proms/IMG2022.jpeg" alt="Imagen 3"><p>PROM 2022</p></div>
-        <div class="slide"><img src="img proms/IMG2021.jpeg" alt="Imagen 4"><p>PROM 2021</p></div> 
-        <div class="slide"><img src="img proms/IMG2020.jpeg" alt="Imagen 5"><p>PROM 2020</p></div> 
-        <div class="slide"><img src="img proms/IMG2019.jpeg" alt="Imagen 6"><p>PROM 2019</p></div> 
-        <div class="slide"><img src="img proms/IMG2018.jpg" alt="Imagen 7"><p>PROM 2018</p></div> 
-        <div class="slide"><img src="img proms/IMG2017.jpg" alt="Imagen 8"><p>PROM 2017</p></div> 
-        <div class="slide"><img src="img proms/IMG2016.jpg" alt="Imagen 9"><p>PROM 2016</p></div> 
-        <div class="slide"><img src="img proms/IMG2015.png" alt="Imagen 10"><p>PROM 2015</p></div> 
-        <div class="slide"><img src="img proms/IMG2014.png" alt="Imagen 11"><p>PROM 2014</p></div> 
-        <div class="slide"><img src="img proms/IMG2013.jpg" alt="Imagen 12"><p>PROM 2013</p></div> 
-        <div class="slide"><img src="img proms/IMG2012.png" alt="Imagen 13"><p>PROM 2012</p></div> 
-        <div class="slide"><img src="img proms/IMG2011.png" alt="Imagen 14"><p>PROM 2011</p></div> 
+    <div class="contenedor-fijo">
+        <div class="contenido">
+            <ol>
+        <div>
+            <p>PROM 2023</p><img src="img proms/IMG2023.jpeg" alt="Imagen 2">
+        </div>              
+        <div>
+            <p>PROM 2022</p><img src="img proms/IMG2022.jpeg" alt="Imagen 3">
         </div>
-       
-        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-         <a class="next" onclick="changeSlide(1)">&#10095;</a>  
+        <div>
+            <p>PROM 2021</p><img src="img proms/IMG2021.jpeg" alt="Imagen 4">
+        </div> 
+        <div>
+           <p>PROM 2020</p> <img src="img proms/IMG2020.jpeg" alt="Imagen 5">
+        </div> 
+        <div>
+            <p>PROM 2019</p><img src="img proms/IMG2019.jpeg" alt="Imagen 6">
+        </div> 
+        <div>
+            <p>PROM 2018</p><img src="img proms/IMG2018.jpg" alt="Imagen 7">
+        </div> 
+        <div>
+            <p>PROM 2017</p><img src="img proms/IMG2017.jpg" alt="Imagen 8">
+        </div> 
+        <div>
+            <p>PROM 2016</p><img src="img proms/IMG2016.jpg" alt="Imagen 9">
+        </div> 
+        <div>
+            <p>PROM 2015</p><img src="img proms/IMG2015.png" alt="Imagen 10">
+        </div> 
+        <div>
+            <p>PROM 2014</p><img src="img proms/IMG2014.png" alt="Imagen 11">
+        </div> 
+        <div>
+            <p>PROM 2013</p><img src="img proms/IMG2013.jpg" alt="Imagen 12">
+        </div> 
+        <div>
+            <p>PROM 2012</p><img src="img proms/IMG2012.png" alt="Imagen 13">
+        </div> 
+        <div>
+            <p>PROM 2011</p><img src="img proms/IMG2011.png" alt="Imagen 14">
         </div>
-            </div>
+     </ol>
+        </div>
+        </div>
 
-    
-    <script>
-       const slidesContainer = document.querySelector('.slides');
-const slides = document.querySelectorAll('.slide');
-const slideCount = slides.length;
-let currentIndex = 1; // La primera imagen real
-let isTransitioning = false; // Controla si una transición está en curso
-const slideWidth = slides[0].clientWidth;
-
-// Clonar la primera y la última imagen
-const firstSlide = slides[0].cloneNode(true);
-const lastSlide = slides[slides.length - 1].cloneNode(true);
-
-// Añadir las imágenes clonadas al principio y al final
-slidesContainer.appendChild(firstSlide);
-slidesContainer.insertBefore(lastSlide, slidesContainer.firstChild);
-
-// Actualizar el slideWidth
-const updatedSlides = document.querySelectorAll('.slide');
-const updatedSlideWidth = updatedSlides[0].clientWidth;
-
-// Ajustar la posición inicial del slider
-slidesContainer.style.transform = `translateX(${-updatedSlideWidth}px)`;
-slidesContainer.style.transition = 'none';
-
-function changeSlide(direction) {
-    // Evitar múltiples clics durante la transición
-    if (isTransitioning) return;
-    isTransitioning = true; // Marcar que estamos en una transición
-
-    slidesContainer.style.transition = 'transform 0.5s ease-in-out';
-    currentIndex += direction;
-    slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
-
-    slidesContainer.addEventListener('transitionend', function () {
-        // Si llegamos al primer slide clonado
-        if (currentIndex === 0) {
-            slidesContainer.style.transition = 'none';
-            currentIndex = slideCount; // Mover al último slide real
-            slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
-        } 
-        // Si llegamos al último slide clonado
-        else if (currentIndex === slideCount + 1) {
-            slidesContainer.style.transition = 'none';
-            currentIndex = 1; // Mover al primer slide real
-            slidesContainer.style.transform = `translateX(${-updatedSlideWidth * currentIndex}px)`;
-        }
-        
-        isTransitioning = false; // Permitir cambios nuevamente
-    }, { once: true });
-}
-
-// Agregar eventos a las flechas de navegación
-document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
-document.querySelector('.next').addEventListener('click', () => changeSlide(1));
-
-    </script>
 </body>
 </html>
 
