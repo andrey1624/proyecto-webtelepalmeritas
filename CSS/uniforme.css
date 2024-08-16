@@ -102,7 +102,7 @@ p {
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
       overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
-      margin-top: 100px;
+     
   }
 
   .contenido {
