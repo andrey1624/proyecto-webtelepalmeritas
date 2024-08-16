@@ -97,11 +97,12 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
       width: 95%;
-      height: 100%;
-      padding-top: 20px; /* Reduce el padding superior */
+      height: 900px;
+      padding-top: 10px; /* Reduce el padding superior */
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
       overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
+      margin-top: 100px;
   }
 
   .contenido {
