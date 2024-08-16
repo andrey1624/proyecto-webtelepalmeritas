@@ -1,3 +1,4 @@
+/* Estilos generales */
 .navbar {
   position: fixed;
   z-index: 1;
@@ -19,25 +20,32 @@
 .contenedor-fijo {
   display: flex;
   justify-content: center; /* Centra los contenedores horizontalmente */
-  align-items: flex-start; /* Alinea los contenedores al inicio verticalmente */
+  align-items: center; /* Centra los contenedores verticalmente */
   width: 90%;
   height: 77vh; /* Altura en relación a la altura de la ventana gráfica */
-  overflow: hidden;
+  overflow-y: scroll; /* Permite el desplazamiento vertical */
   padding-top: 10px;
   position: fixed;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+.contenedor-fijo::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
 }
 
 ol {
   display: flex;
   justify-content: center; /* Centra los contenedores horizontalmente */
+  align-items: center; /* Centra los contenedores verticalmente */
   gap: 50px; /* Añade espacio entre los contenedores */
   width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 100%; /* Asegura que los elementos se centren verticalmente */
 }
 
 ol div {
@@ -49,7 +57,7 @@ ol div {
   display: flex;
   flex-direction: column; /* Permite colocar el párrafo y la imagen en columnas */
   align-items: center; /* Centra el contenido horizontalmente */
-  justify-content: flex-start; /* Alinea el contenido al inicio verticalmente (parte superior) */
+  justify-content: center; /* Centra el contenido verticalmente */
 }
 
 ol div img {
@@ -69,6 +77,15 @@ p {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
+  .contenedor-fijo {
+    position: static; /* Elimina la posición fija para permitir el desplazamiento */
+    transform: none; /* Elimina la transformación de centrado */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin-top: 20px; /* Añade un margen superior para separación */
+    padding-top: 0; /* Ajusta el padding superior si es necesario */
+    overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
+  }
+
   ol {
     flex-direction: column; /* Dispone los contenedores en una columna */
     align-items: center; /* Centra los contenedores horizontalmente */
@@ -77,6 +94,7 @@ p {
 
   ol div {
     width: 100%; /* Los contenedores ocuparán todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
   }
 
   ol div img {
