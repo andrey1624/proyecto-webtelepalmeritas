@@ -32,13 +32,6 @@
   scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
 }
 
-.contenedor-fijo::-webkit-scrollbar {
-  display: none; /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
-}
-.contenedor-fijo {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 
 ol {
   display: flex;
@@ -78,15 +71,15 @@ p {
   font-size: 32px;
   font-family: 'Dancing Script', cursive;
 }
-
 /* Media query para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: auto; /* Permite que la altura se ajuste automáticamente */
+    height: 60%; /* Permite que la altura se ajuste automáticamente */
     padding-top: 20px; /* Reduce el padding superior */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado alto */
-margin-top: 750px;
+    margin-top: 900px; /* Elimina el margen superior para evitar problemas de desplazamiento */
+    border: 3px solid black; /* Añade un borde para visibilidad */
+    position: relative;
   }
 
   ol {
@@ -101,9 +94,8 @@ margin-top: 750px;
   ol div {
     width: 90%;
     height: auto; /* Deja que la altura se ajuste automáticamente */
-    margin: 20px auto; /* Reduce el margen para pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenido y elimina el margen vertical */
     font-size: 20px; /* Reduce el tamaño de la fuente */
-   
     display: flex;
     flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
     align-items: center; /* Centra ambos elementos */
@@ -122,5 +114,6 @@ margin-top: 750px;
     margin: 0; /* Elimina el margen para evitar espacio extra */
     padding: 10px 0; /* Añade padding vertical para mejorar la presentación */
   }
-}
 
+
+}
