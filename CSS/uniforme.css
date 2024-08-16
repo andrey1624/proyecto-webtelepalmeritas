@@ -80,10 +80,10 @@ p {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: 85%;
+    height: 80%;
     padding-top: 20px; /* Reduce el padding superior */
 }
 
@@ -95,10 +95,16 @@ p {
   }
 
   ol div {
-    width: 100%; /* Los contenedores ocuparán todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
-  }
+    width: 93%;
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    margin: 20px auto; /* Reduce el margen para pantallas pequeñas */
+    font-size: 20px; /* Reduce el tamaño de la fuente */
+    padding: 10px; /* Reduce el padding interno */
+    display: flex;
+    flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
+    align-items: center; /* Centra ambos elementos */
 
+  }
   ol div img {
     width: 100%; /* La imagen se ajustará al ancho del contenedor */
     height: auto; /* La altura se ajustará proporcionalmente */
