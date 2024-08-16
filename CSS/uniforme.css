@@ -24,9 +24,9 @@
   width: 90%;
   height: 77vh; /* Altura en relación a la altura de la ventana gráfica */
   overflow-y: scroll; /* Permite el desplazamiento vertical */
-  padding-top: 10px;
+  padding-top: 20px;
   position: fixed;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
   scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
@@ -37,7 +37,6 @@
 }
 .contenedor-fijo {
   -ms-overflow-style: none;
-
   scrollbar-width: none;
 }
 
@@ -83,24 +82,16 @@ p {
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .contenedor-fijo {
-    position: static; /* Elimina la posición fija para permitir el desplazamiento */
-    transform: none; /* Elimina la transformación de centrado */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    margin-top: 20px; /* Añade un margen superior para separación */
-    margin-left: 5%; /* Elimina márgenes adicionales */
-    padding-top: 0; /* Ajusta el padding superior si es necesario */
-    overflow-y: auto; /* Permite el desplazamiento vertical si es necesario */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-  }
+    width: 95%;
+    height: 85%;
+    padding-top: 20px; /* Reduce el padding superior */
+}
 
   ol {
     flex-direction: column; /* Dispone los contenedores en una columna */
- justify-content: center; /* Centra los contenedores horizontalmente */
+    justify-content: center; /* Centra los contenedores horizontalmente */
     gap: 20px; /* Mantiene el espacio entre los contenedores */
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    width: 90%; /* Asegura que ocupe todo el ancho disponible */
   }
 
   ol div {
