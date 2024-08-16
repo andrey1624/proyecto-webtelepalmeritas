@@ -97,7 +97,7 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
       width: 95%;
-      height: 90%;
+      height: 100%;
       padding-top: 20px; /* Reduce el padding superior */
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
@@ -107,8 +107,6 @@ p {
   .contenido {
       overflow-y: auto; /* Permite el desplazamiento vertical en pantallas pequeñas */
   }
- 
-
 
   ol {
       flex-direction: column; /* Disposición en columna */
@@ -117,30 +115,30 @@ p {
   }
 
   ol div {
-      width: 80%; /* Ocupa todo el ancho disponible */
+      width: 80%; /* Ocupa el 80% del ancho disponible */
       height: auto; /* Deja que la altura se ajuste automáticamente */
       margin: 20px 0; /* Margen superior e inferior para separación */
       font-size: 20px; /* Reduce el tamaño de la fuente */
-     
+      margin-left: 10%; /* Centra el div horizontalmente */
       display: flex;
       flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
       align-items: center; /* Centra ambos elementos */
   }
 
   ol div img {
-      width: 90%; /* Ajusta la imagen al 90% del contenedor */
+      width: 100%; /* La imagen ocupa todo el ancho del contenedor */
       height: auto; /* Ajusta la altura automáticamente */
       margin: auto; /* Centra la imagen horizontalmente */
       display: block;
   }
 
   p {
-      width: 80%;
+      width: 100%; /* El texto ocupa todo el ancho del contenedor */
       height: auto; /* Ajusta la altura automáticamente */
-      font-size: 40px; /* Tamaño de fuente ajustado */
+      font-size: 38px; /* Tamaño de fuente ajustado */
       margin: 10px auto; /* Margen ajustado para el texto */
-      position: relative; /* Cambia a position relative para adaptarse mejor */
-      text-align: center; /* Centra el texto */
-  
+      text-align: center; /* Centra el texto horizontalmente */
+      padding: 10px 0; /* Espacio interno del texto */
+      word-wrap: break-word; /* Permite que el texto se ajuste al ancho del contenedor */
   }
 }
