@@ -1,3 +1,8 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+}
+
 .fixed-image {
   position: fixed;    
   top: 0;
@@ -11,132 +16,71 @@
   filter: blur(10px);
 }
 
-.container {
-  width: 1100px;
-  height: 500px;
+.contenedor-fijo {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  top: 100px;
-}
-
-.imgContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-
-.slide_div,
-.slide_divvv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.slide_divv {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centra el contenido */
-  flex-direction: column;
-  width: 100%; /* Asegura que ocupe todo el ancho */
-}
-
-.slider_button {
-  width: 250px;
-  height: 370px;
-  transition: all 0.7s ease;
-  border-radius: 20px;
-  border: 3px solid rgb(0, 0, 0);
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-
-.slider_button:focus {
-  outline: none;
-  width: 320px;
-  height: 470px;
-  border: 3px solid black;
-}
-
-.slider_button:hover {
-  background-color: rgba(39, 39, 39, 0.2);
-}
-
-.slider_button img {
+  justify-content: center; /* Centra los contenedores horizontalmente */
+  align-items: flex-start; /* Alinea los contenedores al inicio verticalmente */
   width: 90%;
-  height: auto;
-  border-radius: 20px;
-  transition: all 0.7s ease;
-  position: relative;
-  top: 30px;
+  height: 77vh; /* Altura en relación a la altura de la ventana gráfica */
+  overflow: hidden;
+  padding-top: 10px;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenedor horizontal y verticalmente */
 }
 
-.slider_button:focus img {
-  width: 90%;
-  height: auto;
-  position: relative;
-  top: 30px;
-}
-
-.slider_button:focus p {
-  font-size: 37px;
-  position: absolute;
-  top: 13px;
-}
-
-.slider_button p {
-  position: absolute;
-  top: 13px;
+ol {
+  display: flex;
+  justify-content: center; /* Centra los contenedores horizontalmente */
+  gap: 50px; /* Añade espacio entre los contenedores */
   width: 100%;
+  padding: 0;
   margin: 0;
-  color: black;
-  font-size: 30px;
-  transition: all 0.7s ease;
+  list-style: none;
 }
 
-/* Estilos para pantallas pequeñas (disposición ajustada) */
-@media only screen and (max-width: 600px) {
-  .imgContainer {
-      flex-direction: column; /* Cambia a columna para apilar los sliders */
-      align-items: flex-start; /* Alinea los elementos a la izquierda */
+ol div {
+  width: 28%; /* Ajusta el ancho de los contenedores */
+  height: 100%; /* Asegura que la altura se respete */
+  border: 3px solid black;
+  border-radius: 20px;
+  box-sizing: border-box; /* Asegura que el tamaño incluya el padding y el borde */
+  display: flex;
+  flex-direction: column; /* Permite colocar el párrafo y la imagen en columnas */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: flex-start; /* Alinea el contenido al inicio verticalmente (parte superior) */
+}
+
+ol div img {
+  width: 100%;
+  height: 420px;
+  border-radius: 20px;
+  margin-top: 0; /* Añade espacio entre el párrafo y la imagen si es necesario */
+}
+
+p {
+  margin: 10px; /* Elimina el margen predeterminado del párrafo */
+  text-align: center; /* Centra el texto dentro del párrafo */
+  width: 100%; /* Asegura que el párrafo ocupe todo el ancho del contenedor */
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  ol {
+    flex-direction: column; /* Dispone los contenedores en una columna */
+    align-items: center; /* Centra los contenedores horizontalmente */
+    gap: 20px; /* Mantiene el espacio entre los contenedores */
   }
 
-  .slide_div, .slide_divvv {
-      display: flex; /* Asegura que los elementos sean flexibles */
-      justify-content: flex-start; /* Alinea los sliders a la izquierda */
-      margin-bottom: 10px; /* Espacio entre filas */
-      width: 100%; /* Ocupa todo el ancho */
+  ol div {
+    width: 100%; /* Los contenedores ocuparán todo el ancho disponible */
   }
 
-  .slide_divv {
-      display: flex; /* Asegura que el slider del medio esté centrado */
-      justify-content: flex-start; /* Alinea el slider del medio a la izquierda */
-      width: 100%; /* Ocupa todo el ancho */
-      margin-top: 10px; /* Espacio encima del slider del medio */
-  }
-
-  .slider_button {
-      width: 180px; /* Ajusta el tamaño de los botones en móviles */
-      height: 250px; /* Ajusta la altura */
-      margin: 0; /* Sin margen lateral */
-  }
-
-  .slider_button img {
-      width: 90%; /* Ajusta el tamaño de la imagen */
-  }
-
-  .slider_button p {
-      font-size: 18px; /* Ajusta el tamaño de la fuente */
+  ol div img {
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto; /* La altura se ajustará proporcionalmente */
   }
 }
-  
