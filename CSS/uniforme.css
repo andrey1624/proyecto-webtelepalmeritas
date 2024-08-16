@@ -83,10 +83,10 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: 85%;
+    height: auto; /* Permite que la altura se ajuste automáticamente */
     padding-top: 20px; /* Reduce el padding superior */
-    border: 3px solid black;
-    overflow-y: auto; /* Permite el desplazamiento vertical */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado alto */
+margin-top: 750px;
   }
 
   ol {
@@ -99,11 +99,11 @@ p {
   }
 
   ol div {
-    width: 93%;
+    width: 90%;
     height: auto; /* Deja que la altura se ajuste automáticamente */
     margin: 20px auto; /* Reduce el margen para pantallas pequeñas */
     font-size: 20px; /* Reduce el tamaño de la fuente */
-    padding: 10px; /* Reduce el padding interno */
+   
     display: flex;
     flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
     align-items: center; /* Centra ambos elementos */
@@ -123,3 +123,4 @@ p {
     padding: 10px 0; /* Añade padding vertical para mejorar la presentación */
   }
 }
+
