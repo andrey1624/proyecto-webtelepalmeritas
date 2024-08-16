@@ -98,7 +98,7 @@ ol div {
     .contenedor-fijo {
         width: 95%;
         height: 85%;
-        padding-top: 20px; /* Reduce el padding superior */
+        padding-top: 40px; /* Reduce el padding superior */
     }
 
     .contenido {
