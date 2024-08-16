@@ -83,15 +83,19 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: 80%;
+    height: 85%;
     padding-top: 20px; /* Reduce el padding superior */
-}
+    border: 3px solid black;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+  }
 
   ol {
+    display: flex;
     flex-direction: column; /* Dispone los contenedores en una columna */
-    justify-content: center; /* Centra los contenedores horizontalmente */
-    gap: 20px; /* Mantiene el espacio entre los contenedores */
-    width: 90%; /* Asegura que ocupe todo el ancho disponible */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Añade espacio entre los elementos */
   }
 
   ol div {
@@ -103,10 +107,19 @@ p {
     display: flex;
     flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
     align-items: center; /* Centra ambos elementos */
-
   }
+
   ol div img {
     width: 100%; /* La imagen se ajustará al ancho del contenedor */
     height: auto; /* La altura se ajustará proporcionalmente */
+    display: block;
+  }
+
+  p {
+    width: 100%; /* Asegura que el párrafo ocupe todo el ancho del contenedor */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    font-size: 20px; /* Ajusta el tamaño de la fuente */
+    margin: 0; /* Elimina el margen para evitar espacio extra */
+    padding: 10px 0; /* Añade padding vertical para mejorar la presentación */
   }
 }
