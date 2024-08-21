@@ -105,6 +105,7 @@
 
     .slider {
         height: auto; /* Permite que la altura del slider se ajuste automáticamente */
+        width: 87%;
     }
 
     .slide {
