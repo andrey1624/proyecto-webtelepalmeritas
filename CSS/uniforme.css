@@ -63,7 +63,7 @@ ol {
 ol div {
   position: relative;
   width: 30%; /* Ancho del contenedor */
-  height: 70%; /* Altura del contenedor */
+  height: 69%; /* Altura del contenedor */
   margin: 0; /* Sin margen vertical */
   font-size: 30px;
   border-radius: 15px;
@@ -102,7 +102,7 @@ p {
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
       overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
-     
+    
   }
 
   .contenido {
