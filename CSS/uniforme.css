@@ -76,7 +76,7 @@ ol div {
 }
 
 ol div img {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  width: 74%; /* La imagen ocupa todo el ancho del contenedor */
   height: 90%; /* La imagen ocupa toda la altura del contenedor */
   object-fit: cover; /* La imagen se recorta para llenar el contenedor */
   border-radius: 15px;
