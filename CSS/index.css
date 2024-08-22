@@ -23,7 +23,7 @@
 
 .slider {
     position: relative;
-    width: 570px;
+    width: 580px;
     height: 354px;
     overflow: hidden;
     border-radius: 20px;
@@ -44,7 +44,7 @@
 }
 
 .video {
-    width: 570px;
+    width: 580px;
     height: 354px;
     background-color: #010101;
     margin: 20px; 
