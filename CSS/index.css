@@ -7,6 +7,7 @@
     background-image: url(fondo\ html.jpg);
     background-position: center;
     z-index: -1; /* Envía la imagen al fondo */
+     filter: blur(20px);
 }
 
 .contenedor {
