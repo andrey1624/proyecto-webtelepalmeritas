@@ -10,7 +10,7 @@
 }
 
 .contenedor {
-    width: 1200px; /* Puedes cambiar esto si es necesario */
+    width: 1280px; /* Puedes cambiar esto si es necesario */
     height: 394px; /* Ajustado para coincidir con la altura del slider */
     margin: 110px auto; /* Centrar el contenedor */
     position: relative;  
