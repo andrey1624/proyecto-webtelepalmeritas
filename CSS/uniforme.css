@@ -29,23 +29,10 @@
   padding-top: 50px; /* Ajusta para evitar que la barra de navegación lo cubra */
 }
 
-.contenido {
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Evita el desplazamiento en pantallas grandes */
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
 
-/* Estilo para ocultar la barra de desplazamiento */
-.contenido::-webkit-scrollbar {
-  display: none;
-}
 
-.contenido {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+
+
 
 ol {
   display: flex;
@@ -67,7 +54,7 @@ ol div {
   margin: 0; /* Sin margen vertical */
   font-size: 30px;
   border-radius: 15px;
-  border: 3px solid black;
+  border: 5px solid black;
   display: flex;
   flex-direction: column; /* Para permitir centrar el texto verticalmente */
   align-items: center; /* Centra el contenido horizontalmente */
@@ -97,8 +84,8 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: 70%;
-   margin-top: 50px; /* Reduce el padding superior */
+    height: 80%;
+   margin-top: 20px; /* Reduce el padding superior */
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
       overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
