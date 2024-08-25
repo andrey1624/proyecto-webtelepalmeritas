@@ -97,29 +97,26 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 95%;
-    height: 95%;
-    padding-top: 100px; /* Reduce el padding superior */
+    height: 80%;
+   margin-top: 100px; /* Reduce el padding superior */
       display: flex;
       flex-direction: column; /* Coloca los elementos en una columna */
       overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
-    background-color: aqua;
+      background-color: aqua;
     
   }
 
-  .contenido {
-      overflow-y: auto; /* Permite el desplazamiento vertical en pantallas pequeñas */
-  }
 
   ol {
       flex-direction: column; /* Disposición en columna */
       overflow-x: hidden; /* Elimina el desplazamiento horizontal */
-      gap: 20px; /* Espacio entre los elementos en la columna */
+      
   }
 
   ol div {
       width: 80%; /* Ocupa el 80% del ancho disponible */
       height: auto; /* Deja que la altura se ajuste automáticamente */
-      margin: 20px 0; /* Margen superior e inferior para separación */
+      margin: 10px 0; /* Margen superior e inferior para separación */
       font-size: 20px; /* Reduce el tamaño de la fuente */
       margin-left: 10%; /* Centra el div horizontalmente */
       display: flex;
