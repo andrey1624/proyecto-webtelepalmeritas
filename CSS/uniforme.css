@@ -83,18 +83,19 @@ p {
 /* Para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
-    width: 95%;
+    width: 85%;
     height: 80%;
-   margin-top: 20px; /* Reduce el padding superior */
-      display: flex;
-      flex-direction: column; /* Coloca los elementos en una columna */
-      overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
-      background-color: aqua;
-    
+    margin-top: 20px; /* Reduce el padding superior */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
+    background-color: aqua;
+    padding-top: 5px;
   }
 
 
   ol {
+
       flex-direction: column; /* Disposición en columna */
       overflow-x: hidden; /* Elimina el desplazamiento horizontal */
       
@@ -109,6 +110,7 @@ p {
       display: flex;
       flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
       align-items: center; /* Centra ambos elementos */
+      padding-top: 0px;
   }
 
   ol div img {
