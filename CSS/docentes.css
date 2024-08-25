@@ -107,8 +107,9 @@
     }
 
     .container {
-        width: 100%; /* Estira el contenedor al ancho de la pantalla */
-        height: 100vh; /* Utiliza el 100% del alto de la ventana gráfica */
+        width: 95%;
+        height: 85%;
+        padding-top: 20px; /* Reduce el padding superior */
         padding-top: 80px; /* Reduce el padding superior */
         overflow: hidden; /* Desactiva el desplazamiento dentro del contenedor */
         position: relative; /* Asegura que el contenedor se mantenga en su lugar */
@@ -116,7 +117,8 @@
 
     .slider {
         height: calc(100% - 80px); /* Ajusta la altura del slider para ocupar el espacio restante */
-        width: 70%;
+        width: 90%;
+        height: 90%;
         overflow: hidden; /* Desactiva el desplazamiento dentro del slider */
         margin: 0 auto; /* Centra el slider horizontalmente */
         position: relative; /* Fija la posición para evitar el movimiento */
