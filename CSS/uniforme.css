@@ -99,9 +99,9 @@ p {
   ol div {
       width: 100%; /* Ocupa el 80% del ancho disponible */
       height: auto; /* Deja que la altura se ajuste automáticamente */
-      margin:  0; /* Margen superior e inferior para separación */
+      margin:  0px; /* Margen superior e inferior para separación */
       font-size: 20px; /* Reduce el tamaño de la fuente */
-      margin-left: 2%; /* Centra el div horizontalmente */
+      margin-left: 3%; /* Centra el div horizontalmente */
       display: flex;
       flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
       align-items: center; /* Centra ambos elementos */
