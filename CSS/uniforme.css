@@ -29,16 +29,11 @@
   padding-top: 50px; /* Ajusta para evitar que la barra de navegación lo cubra */
 }
 
-
-
-
-
-
 ol {
   display: flex;
   flex-direction: row; /* Disposición horizontal */
   justify-content: space-between; /* Espaciado uniforme entre elementos */
-  gap: 30px; /* Espacio de 30px entre los elementos */
+  gap: 20px; /* Espacio de 30px entre los elementos */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -102,7 +97,7 @@ p {
   }
 
   ol div {
-      width: 90%; /* Ocupa el 80% del ancho disponible */
+      width: 100%; /* Ocupa el 80% del ancho disponible */
       height: auto; /* Deja que la altura se ajuste automáticamente */
       margin:  0; /* Margen superior e inferior para separación */
       font-size: 20px; /* Reduce el tamaño de la fuente */
