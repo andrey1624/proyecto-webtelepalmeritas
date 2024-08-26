@@ -1,0 +1,186 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .conte {
+        width: 98%;
+        height: 620px;
+        border: 3px solid black;
+        position: relative;
+        margin: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 50px;
+    }
+
+    .fecha {
+        font-size: 40px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .titulo {
+        font-size: 50px;
+        width: 80%;
+        text-align: center;
+        padding: 20px 0;
+        box-sizing: border-box;
+        margin-left: 50px;
+    }
+
+    .slider {
+        width: 47%;
+        height: 350px;
+        position: absolute;
+        top: 170px;
+        left: 1%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+        border-radius: 10px;
+    }
+
+    .slider img.active {
+        display: block;
+    }
+
+    .argumento {
+        width: 47%;
+        text-align: center;
+        font-size: 28px;
+        border-radius: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+
+        position: absolute;
+        right: 1%;
+        top: 150px;
+    }
+
+    h1 {
+        font-size: 1em;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+
+    .text-argu {
+        width: 100%;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        z-index: 10;
+    }
+
+    .house-button-image {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        border: none;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+    }
+
+    .house-button-image:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .house-button-icon {
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 50%;
+        color: black;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s, color 0.3s;
+        background-color: white;
+    }
+
+    .house-button-icon:hover {
+        background-color: black;
+        color: white;
+    }
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .conte {
+        width: 95%; /* Ocupa casi todo el ancho */
+        height: auto;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    .fecha {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .titulo {
+        font-size: 28px; /* Aumenta el tamaño del título */
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 50px; /* Más espacio debajo de la fecha */
+        margin-bottom: 10px; /* Añade un margen inferior */
+        font-weight: bold; /* Hacer que el título sea más destacado */
+    }
+
+    .argumento {
+        width: 95%;
+        margin-bottom: 20px; /* Espacio debajo del argumento */
+        position: relative;
+        text-align: center; /* Centra el texto */
+        font-size: 18px; /* Ajusta el tamaño del texto del argumento */
+        line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+        margin-top: -170px; /* Ajuste de margen superior */
+    }
+
+    .slider {
+        width: 95%;
+        height: 400px; /* Altura del slider */
+        margin-top: 0; /* Sin margen superior */
+        margin-bottom: 60px; /* Espacio debajo del slider */
+        position: relative;
+        overflow: hidden; /* Asegura que el contenido del slider no sobresalga */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        padding-bottom: 20px; /* Añade 20px de padding en la parte inferior */
+    }
+
+    .slider img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del slider */
+        height: 100%; /* Asegura que la imagen ocupe toda la altura del slider */
+        object-fit: cover; /* Expande la imagen para cubrir todo el slider */
+    }
+}

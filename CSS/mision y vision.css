@@ -1,0 +1,56 @@
+/* Imagen de fondo fija */
+.fixed-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(fondo\ html.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Envía la imagen al fondo */
+    filter: blur(2px);
+}
+
+/* Estilos para pantallas grandes */
+.mision, .vision {
+    background-color: rgb(255, 255, 255);
+    width: 25rem;
+    height: 20rem;
+    text-align: center;
+    font-size: 28px;
+    border: solid 3px black;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.mision {
+    left: 175px;
+    top: 190px;
+}
+
+.vision {
+    left: 790px;
+    top: 190px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
+    }
+
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
+    }
+
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
+    }
+}

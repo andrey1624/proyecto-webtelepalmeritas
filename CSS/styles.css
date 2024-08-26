@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    /* Para permitir el desplazamiento del contenido sin interferir con la navbar */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center;
+    background-color: #337ab7; /* Color de fondo de la barra de navegación */
+    padding: 20px 20px;
+    border-radius: 20px;
+    position: absolute; /* Cambia a absoluto para centrarlo */
+    left: 50%; /* Mueve el contenedor hacia el centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta el contenedor para que esté centrado */
+    height: 3rem;
+    width: 90%;
+    z-index: 1;
+}
+
+.navbar .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+}
+
+.navbar .button-container button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px; /* Aumento de radio de borde para botones */
+    padding: 15px 30px; /* Aumento de tamaño de los botones */
+    margin-right: 10px; /* Espacio entre botones */
+    cursor: pointer;
+    color: #007BFF;
+    transition: background-color 0.3s;
+    font-size: 19px;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar .button-container button:hover {
+    background-color: #0056b3;
+    color: #FFFFFF;
+}
+
+.navbar .logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 5px; /* Mueve el logo a la derecha */
+}
+
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 10px 10px;
+        height: auto;
+        width: 90%;
+        border-radius: 0;
+        left: 50%; /* Centra la navbar horizontalmente */
+        transform: translateX(-50%);
+        margin: -10px auto; /* Añade margen automático para centrar verticalmente */
+        border-radius: 15px;
+    }
+
+    .navbar .button-container {
+        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
+        justify-content: center; /* Alinea los botones al centro */
+    }
+
+    .navbar .button-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: calc(100% / 3 - 20px); /* Asegura que los botones tengan el mismo tamaño y haya espacio para el margen */
+        margin: 5px; /* Agrega un margen de 5px alrededor de los botones */
+    }
+
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
