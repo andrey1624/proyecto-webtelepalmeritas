@@ -97,7 +97,7 @@ p {
   }
 
   ol div {
-      width: 100%; /* Ocupa el 80% del ancho disponible */
+      width: 90%; /* Ocupa el 80% del ancho disponible */
       height: auto; /* Deja que la altura se ajuste automáticamente */
       margin:  0px; /* Margen superior e inferior para separación */
       font-size: 20px; /* Reduce el tamaño de la fuente */
