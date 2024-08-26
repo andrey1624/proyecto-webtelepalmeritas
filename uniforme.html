@@ -1,43 +1,127 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-<link rel="stylesheet" href="CSS/uniforme.css">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img src="fondo html.jpg" alt="" class="fixed-image">    
-    <header class="navbar">
-        <div class="button-container">
-            <button onclick="window.location.href='index.html'">INICIO</button>
-            <button onclick="window.location.href='docentes.html'">P. ADMINISTRATIVO</button>
-            <button onclick="window.location.href='manual.html'">MANUAL DE CONVIVENCIA</button>
-            <button onclick="window.location.href='mision y vision.html'">MISÍON Y VISIÓN</button>
-            <button onclick="window.location.href='prom.html'">PROM</button>
-            <button onclick="window.location.href='sedes.html'">SEDES</button>
-        </div>    
-        <div><img src="logo-colegio.png" alt="" class="logo"></div>
-    </header>
-    <div class="contenedor-fijo">
+.navbar {
+  position: fixed;
+  z-index: 1;
+}
 
-            <ol>
-                <div>
-                    <p>DIARIO MASCULINO</p>
-                    <img src="img uniformes/diario masculino.png" alt="">
-                </div>
-                <div>
-                    <p>DIARIO FEMENINO</p>
-                    <img src="img uniformes/diario femenino.png" alt="">
-                </div>
-                <div>
-                    <p>ED. FISICA</p>
-                    <img src="img uniformes/ed fisica.png" alt="">
-                </div>
-            </ol>
-</div>
-</body>
-</html>
+.fixed-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(fondo\ html.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Envía la imagen al fondo */
+  filter: blur(20px);
+}
+
+.contenedor-fijo {
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenedor verticalmente */
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenedor absolutamente */
+  width: 85%;
+  height: 77%;
+  overflow: hidden; /* Evita el desplazamiento en pantallas grandes */
+  padding-top: 50px; /* Ajusta para evitar que la barra de navegación lo cubra */
+}
+
+ol {
+  display: flex;
+  flex-direction: row; /* Disposición horizontal */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  gap: 20px; /* Espacio de 30px entre los elementos */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 700px;
+  overflow-x: hidden; /* Desplazamiento horizontal evitado en pantallas grandes */
+}
+
+ol div {
+  position: relative;
+  width: 30%; /* Ancho del contenedor */
+  height: 69%; /* Altura del contenedor */
+  margin: 0; /* Sin margen vertical */
+  font-size: 30px;
+  border-radius: 15px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column; /* Para permitir centrar el texto verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center; /* Centra el contenido verticalmente */
+  white-space: nowrap; /* Evita que el contenido se divida en varias líneas */
+}
+
+ol div img {
+  width: 74%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 90%; /* La imagen ocupa toda la altura del contenedor */
+  object-fit: cover; /* La imagen se recorta para llenar el contenedor */
+  border-radius: 15px;
+}
+
+p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive; /* Aplica la fuente "Dancing Script" */
+  font-weight: 700; /* Mantén el grosor para un estilo más llamativo */
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+/* Para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .contenedor-fijo {
+    width: 85%;
+    height: 84%;
+    margin-top: 10px; /* Reduce el padding superior */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    overflow: auto; /* Permite el desplazamiento en pantallas pequeñas */
+    background-color: aqua;
+    padding-top: 5px;
+  }
+
+
+  ol {
+
+      flex-direction: column; /* Disposición en columna */
+      overflow-x: hidden; /* Elimina el desplazamiento horizontal */
+      
+  }
+
+  ol div {
+      width: 100%; /* Ocupa el 80% del ancho disponible */
+      height: auto; /* Deja que la altura se ajuste automáticamente */
+      margin:  0px; /* Margen superior e inferior para separación */
+      font-size: 20px; /* Reduce el tamaño de la fuente */
+      margin-left: 3%; /* Centra el div horizontalmente */
+      display: flex;
+      flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
+      align-items: center; /* Centra ambos elementos */
+      padding: 0px;
+  }
+
+  ol div img {
+      width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+      height: auto; /* Ajusta la altura automáticamente */
+      margin: auto; /* Centra la imagen horizontalmente */
+      display: block;
+  }
+
+  p {
+      width: 100%; /* El texto ocupa todo el ancho del contenedor */
+      height: auto; /* Ajusta la altura automáticamente */
+      font-size: 38px; /* Tamaño de fuente ajustado */
+      margin: 10px auto; /* Margen ajustado para el texto */
+      text-align: center; /* Centra el texto horizontalmente */
+      padding: 10px 0; /* Espacio interno del texto */
+      word-wrap: break-word; /* Permite que el texto se ajuste al ancho del contenedor */
+  }
+}
