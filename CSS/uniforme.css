@@ -84,7 +84,7 @@ p {
 @media only screen and (max-width: 600px) {
   .contenedor-fijo {
     width: 85%;
-    height: 80%;
+    height: 90%;
     margin-top: 20px; /* Reduce el padding superior */
     display: flex;
     flex-direction: column; /* Coloca los elementos en una columna */
