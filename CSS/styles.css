@@ -85,3 +85,67 @@ body {
 }
 
 
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 800px) {
+    .navbar {
+        padding: 10px 10px;
+        height: auto;
+        width: 90%;
+        border-radius: 0;
+        left: 50%; /* Centra la navbar horizontalmente */
+        transform: translateX(-50%);
+        margin: -10px auto; /* Añade margen automático para centrar verticalmente */
+        border-radius: 15px;
+    }
+
+    .navbar .button-container {
+        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
+        justify-content: center; /* Alinea los botones al centro */
+    }
+
+    .navbar .button-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: calc(100% / 3 - 20px); /* Asegura que los botones tengan el mismo tamaño y haya espacio para el margen */
+        margin: 5px; /* Agrega un margen de 5px alrededor de los botones */
+    }
+
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* Ajustes específicos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        padding: 10px 10px;
+        height: auto;
+        width: 90%;
+        border-radius: 0;
+        left: 50%; /* Centra la navbar horizontalmente */
+        transform: translateX(-50%);
+        margin: -10px auto; /* Añade margen automático para centrar verticalmente */
+        border-radius: 15px;
+    }
+
+    .navbar .button-container {
+        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
+        justify-content: center; /* Alinea los botones al centro */
+    }
+
+    .navbar .button-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: calc(100% / 3 - 20px); /* Asegura que los botones tengan el mismo tamaño y haya espacio para el margen */
+        margin: 5px; /* Agrega un margen de 5px alrededor de los botones */
+    }
+
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
