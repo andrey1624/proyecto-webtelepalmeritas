@@ -89,12 +89,6 @@ p {
   }
 
 
-  ol {
-
-      flex-direction: column; /* Disposición en columna */
-      overflow-x: hidden; /* Elimina el desplazamiento horizontal */
-      
-  }
 
   ol div {
       width: 90%; /* Ocupa el 80% del ancho disponible */
