@@ -15,23 +15,28 @@
 /* Estilos para pantallas grandes */
 .mision, .vision {
     background-color: rgb(255, 255, 255);
-    width: 25rem;
-    height: 20rem;
+    width: 28rem;
+    height: 23rem;
     text-align: center;
     font-size: 28px;
     border: solid 3px black;
     border-radius: 15px;
     position: absolute;
+    
 }
-
+p,h1{
+  margin: 20px;
+}
 .mision {
-    left: 175px;
+    left: 130px;
+    position: absolute;
     top: 190px;
 }
 
 .vision {
     left: 790px;
     top: 190px;
+    position: absolute;
 }
 
 /* Estilos para pantallas pequeñas */
