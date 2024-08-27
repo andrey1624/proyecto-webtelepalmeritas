@@ -8,7 +8,7 @@
     }
 
     .conte {
-        width: 95%;
+        width: 98%;
         height: 620px;
         border: 3px solid black;
         position: relative;
@@ -32,6 +32,7 @@
         text-align: center;
         padding: 20px 0;
         box-sizing: border-box;
+        margin-left: 50px;
     }
 
     .slider {
@@ -59,9 +60,9 @@
     .argumento {
         width: 47%;
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
         border-radius: 10px;
-        padding: 10px;
+        padding: 30px;
         box-sizing: border-box;
 
         position: absolute;
@@ -70,7 +71,7 @@
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
         margin: 10px 0;
         text-transform: uppercase;
     }
