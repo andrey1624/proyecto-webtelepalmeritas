@@ -43,7 +43,7 @@ ol {
 }
 ol div {
     position: relative;
-    width: 96%;
+    width: 95%;
     height: 400px;
     margin: 40px auto; /* Agrega margen entre los contenedores */
     text-align: center;
