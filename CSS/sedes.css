@@ -35,16 +35,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-/* Estilo para ocultar la barra de desplazamiento */
-.contenido::-webkit-scrollbar {
-    display: none;
-}
 
-.contenido {
-    -ms-overflow-style: none;
-
-    scrollbar-width: none;
-}
 ol {
     margin: 0;
     padding: 0;
