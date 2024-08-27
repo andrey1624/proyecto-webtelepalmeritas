@@ -83,7 +83,6 @@ p {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    background-color: aqua;
     padding-top: 5px;
   }
 
