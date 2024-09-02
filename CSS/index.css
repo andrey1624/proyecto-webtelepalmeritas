@@ -44,16 +44,26 @@
     opacity: 1;
 }
 
-.video {
+.texto {
     width: 580px;
     height: 354px;
-    background-color: #010101;
     margin: 20px; 
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenido */
 }
 
+p {
+    font-size: 23px;
+    padding: 5px;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
 .footer {
-    width: 30%;
+    width: 25%;
     height: 50px; /* Ajusta la altura según sea necesario */
     display: flex;
     justify-content: space-around;
@@ -68,12 +78,13 @@
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px 60px;
+    padding: 10px 90px;
     text-decoration: none;
     border-radius: 5px;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    color: white; /* Color del texto blanco */
+    color: #ffffff; /* Color del texto blanco */
+    transition: background-color 0.3s; 
 }
 
 .footer-button.facebook {
@@ -83,7 +94,7 @@
 .footer-button.facebook:hover {
     background-color: #365899;
 }
-
+/*
 .footer-button.tiktok {
     background-color: #010101;
 }
@@ -91,7 +102,7 @@
 .footer-button.tiktok:hover {
     background-color: #181818;
 }
-
+*/
 .conte {
     width: 25%;
     height: 50px; /* Ajusta la altura según sea necesario */
@@ -139,7 +150,49 @@
     }
 
     .slider,
-    .video {
+    .texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100%; /* Ajusta la altura automáticamente */
+        max-width: 570px; /* Limita el ancho máximo */
+        min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
+        margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+    }
+
+    .footer,
+    .conte {
+        width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
+        margin: 20px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        position: relative; /* Asegura que esté pegado al contenedor principal */
+        display: flex;
+        justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
+        padding: 5px; /* Añade un pequeño padding alrededor del contenedor de botones */
+        right: 0%;
+    }
+
+    .footer-button,
+    .footerr-buttonn {
+        padding: 10px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
+        font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        text-align: center; /* Centra el texto dentro del botón */
+        flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
+        margin: 0 5px; /* Añade un pequeño margen entre los botones */
+                display: flex;
+        justify-content: center; /* Centra el contenido dentro del botón */
+        align-items: center; /* Alinea verticalmente el contenido del botón */
+    }
+}/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 1350px) {
+    .contenedor {
+        width: 95%; /* Ajusta el ancho del contenedor */
+        height: auto;
+        margin: 130px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        flex-direction: column; /* Organiza en columna */
+        align-items: center; /* Centra el contenido horizontalmente */
+        padding: 10px; /* Añade padding para evitar que el contenido colapse */
+    }
+
+    .slider,
+    .texto {
         width: 100%; /* Ancho completo del contenedor */
         height: 100%; /* Ajusta la altura automáticamente */
         max-width: 570px; /* Limita el ancho máximo */
