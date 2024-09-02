@@ -15,10 +15,10 @@
 /* Estilos para pantallas grandes */
 .mision, .vision {
     background-color: rgb(255, 255, 255);
-    width: 28rem;
-    height: 23rem;
+    width: 35rem;
+    height: 27rem;
     text-align: center;
-    font-size: 28px;
+    font-size: 27px;
     border: solid 3px black;
     border-radius: 15px;
     position: absolute;
@@ -28,19 +28,59 @@ p,h1{
   margin: 20px;
 }
 .mision {
-    left: 130px;
+    left: 80px;
     position: absolute;
-    top: 190px;
+    top: 150px;
 }
 
 .vision {
-    left: 790px;
-    top: 190px;
+    left: 720px;
+    top: 150px;
     position: absolute;
 }
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
+    }
+
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
+    }
+
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
+    }
+}
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 1000px) {
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
+    }
+
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
+    }
+
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
+    }
+}
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 1350px) {
     .mision, .vision {
         width: 90%; /* Ajusta el ancho al 90% de la pantalla */
         height: auto; /* Ajusta la altura automáticamente */
