@@ -61,16 +61,23 @@
 .text {
     flex: 1; /* Ocupa el espacio restante */
     text-align: right; /* Alinear texto a la derecha */
-    color: white; /* Color del texto */
+ 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding: 20px; /* Espaciado interno */
+   
+    padding: 10px; /* Espaciado interno */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     border-radius: 10px; /* Bordes redondeados */
     margin-right: 50px;
 
 }
-
+b{
+   color: white; /* Color del texto */
+   font-size: 40px;
+}
+p{
+    color: white; /* Color del texto */
+    font-size: 20px;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
