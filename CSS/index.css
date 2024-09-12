@@ -1,4 +1,8 @@
-/* Imagen de fondo fija */
+.navbar {
+    position: fixed;
+    z-index: 1;
+}
+
 .fixed-image {
     position: fixed;
     top: 0;
@@ -9,93 +13,120 @@
     background-size: cover;
     background-position: center;
     z-index: -1; /* Envía la imagen al fondo */
-    filter: blur(2px);
+    filter: blur(20px);
 }
 
-/* Estilos para pantallas grandes */
-.mision, .vision {
-    background-color: rgb(255, 255, 255);
-    width: 35rem;
-    height: 27rem;
-    text-align: center;
-    font-size: 27px;
-    border: solid 3px black;
+
+ol {
+    margin: -10px;
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+}
+ol div {
+    position: relative;
+    width: 97%;
+    height: auto;
+    margin: 20px auto;
+    font-size: 30px;
+    padding: 20px;
     border-radius: 15px;
-    position: absolute;
-    
-}
-p,h1{
-  margin: 20px;
-}
-.mision {
-    left: 80px;
-    position: absolute;
-    top: 150px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
 }
 
-.vision {
-    left: 720px;
-    top: 150px;
-    position: absolute;
+ol div img {
+    width: 50%; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 15px;
+    margin-left: 45%; /* Empuja la imagen hacia la derecha */
 }
 
-/* Estilos para pantallas pequeñas */
+p {
+    margin-left: 5%;
+    flex: 1;
+    text-align: center;
+    position: absolute;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive; /* Aplica la fuente "Dancing Script" */
+    font-weight: 700; /* Mantén el grosor para un estilo más llamativo */
+}   
+ .button-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+.house-button-image {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.house-button-image:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.house-button-icon {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+}
+
+.house-button-icon:hover {
+    background-color: black;
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
-    .mision, .vision {
-        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+    .contenedor-fijo {
+        width: 95%;
+        height: 85%;
+        padding-top: 20px; /* Reduce el padding superior */
+    }
+
+    ol div {
+        width: 93%;
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        margin: 20px auto; /* Reduce el margen para pantallas pequeñas */
+        font-size: 20px; /* Reduce el tamaño de la fuente */
+        padding: 10px; /* Reduce el padding interno */
+        display: flex;
+        flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
+        align-items: center; /* Centra ambos elementos */
+    }
+
+    ol div img {
+        width: 90%;
         height: auto; /* Ajusta la altura automáticamente */
-        left: 5%; /* Centra los elementos en la pantalla */
-        top: 40%; /* Mueve los elementos más abajo en la pantalla */
-        position: relative; /* Cambia la posición a relativa para el flujo natural */
-        margin-bottom: 20px; /* Espacio entre los elementos */
-        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
+        margin: auto; /* Centra la imagen horizontalmente */
+        display: block;
     }
 
-    .mision {
-        top: 180px; /* Mueve la misión más abajo */
-    }
-
-    .vision {
-        top: 280px; /* Mueve la visión más abajo */
-    }
-}
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 1000px) {
-    .mision, .vision {
-        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+    p {
+        width: 80%;
         height: auto; /* Ajusta la altura automáticamente */
-        left: 5%; /* Centra los elementos en la pantalla */
-        top: 40%; /* Mueve los elementos más abajo en la pantalla */
-        position: relative; /* Cambia la posición a relativa para el flujo natural */
-        margin-bottom: 20px; /* Espacio entre los elementos */
-        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
-    }
-
-    .mision {
-        top: 180px; /* Mueve la misión más abajo */
-    }
-
-    .vision {
-        top: 280px; /* Mueve la visión más abajo */
-    }
-}
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 1350px) {
-    .mision, .vision {
-        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
-        height: auto; /* Ajusta la altura automáticamente */
-        left: 5%; /* Centra los elementos en la pantalla */
-        top: 40%; /* Mueve los elementos más abajo en la pantalla */
-        position: relative; /* Cambia la posición a relativa para el flujo natural */
-        margin-bottom: 20px; /* Espacio entre los elementos */
-        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
-    }
-
-    .mision {
-        top: 180px; /* Mueve la misión más abajo */
-    }
-
-    .vision {
-        top: 280px; /* Mueve la visión más abajo */
+        font-size: 40px; /* Reduce el tamaño de la fuente */
+        margin: 10px auto; /* Reduce el margen */
+        position: relative; /* Cambia a position relative para adaptarse mejor */
+        text-align: center; /* Centra el texto */
+        padding: 10px 10px;
     }
 }
