@@ -1,3 +1,4 @@
+/* Imagen de fondo fija */
 .fixed-image {
     position: fixed;
     top: 0;
@@ -5,222 +6,96 @@
     width: 100%;
     height: 100%;
     background-image: url(fondo\ html.jpg);
+    background-size: cover;
     background-position: center;
     z-index: -1; /* Envía la imagen al fondo */
-     filter: blur(20px);
+    filter: blur(2px);
 }
 
-.contenedor {
-    width: 1260px; /* Puedes cambiar esto si es necesario */
-    height: 394px; /* Ajustado para coincidir con la altura del slider */
-    margin: 110px auto; /* Centrar el contenedor */
-    position: relative;  
-    border: 3px solid black;
-    border-radius: 15px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    position: relative;
-    width: 580px;
-    height: 354px;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slider img.active {
-    opacity: 1;
-}
-
-.texto {
-    width: 580px;
-    height: 354px;
-    margin: 20px; 
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenido */
-
-}
-
-p {
-    font-size: 23px;
-    padding: 5px;
-    margin: 20px 20px 20px 20px;
+/* Estilos para pantallas grandes */
+.mision, .vision {
+    background-color: rgb(255, 255, 255);
+    width: 35rem;
+    height: 27rem;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-.footer {
-    width: 25%;
-    height: 50px; /* Ajusta la altura según sea necesario */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-top: -100px;
-    margin-left: 40px;
-}
-
-.footer-button {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px 90px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #ffffff; /* Color del texto blanco */
-    transition: background-color 0.3s; 
-}
-
-.footer-button.facebook {
-    background-color: #4267B2;
-}
-
-.footer-button.facebook:hover {
-    background-color: #365899;
-}
-/*
-.footer-button.tiktok {
-    background-color: #010101;
-}
-
-.footer-button.tiktok:hover {
-    background-color: #181818;
-}
-*/
-.conte {
-    width: 15%;
-    height: 50px; /* Ajusta la altura según sea necesario */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 10px;
+    font-size: 27px;
+    border: solid 3px black;
+    border-radius: 15px;
     position: absolute;
-    right: 70px;
-    margin-top: -55px;
+    
+}
+p,h1{
+  margin: 20px;
+}
+.mision {
+    left: 80px;
+    position: absolute;
+    top: 150px;
 }
 
-.footerr-buttonn {
-    display: flex;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 60px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #007BFF;
-    transition: background-color 0.3s;
-}
-
-.footerr-buttonn.cont {
-    background-color: rgb(255, 255, 255);
-}
-
-.footerr-buttonn.cont:hover {
-    background-color: #0056b3;
-    color: white;
+.vision {
+    left: 720px;
+    top: 150px;
+    position: absolute;
 }
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
-    .contenedor {
-        width: 95%; /* Ajusta el ancho del contenedor */
-        height: auto;
-        margin: 130px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
-        flex-direction: column; /* Organiza en columna */
-        align-items: center; /* Centra el contenido horizontalmente */
-        padding: 10px; /* Añade padding para evitar que el contenido colapse */
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
     }
 
-    .slider,
-    .texto {
-        width: 100%; /* Ancho completo del contenedor */
-        height: 100%; /* Ajusta la altura automáticamente */
-        max-width: 570px; /* Limita el ancho máximo */
-        min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
-        margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
     }
 
-    .footer,
-    .conte {
-        width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
-        margin: 20px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
-        position: relative; /* Asegura que esté pegado al contenedor principal */
-        display: flex;
-        justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
-        padding: 5px; /* Añade un pequeño padding alrededor del contenedor de botones */
-        right: 0%;
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
+    }
+}
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 1000px) {
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
     }
 
-    .footer-button,
-    .footerr-buttonn {
-        padding: 10px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
-        font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-        text-align: center; /* Centra el texto dentro del botón */
-        flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
-        margin: 0 5px; /* Añade un pequeño margen entre los botones */
-                display: flex;
-        justify-content: center; /* Centra el contenido dentro del botón */
-        align-items: center; /* Alinea verticalmente el contenido del botón */
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
     }
-}/* Estilos para pantallas pequeñas */
+
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
+    }
+}
+/* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 1350px) {
-    .contenedor {
-        width: 95%; /* Ajusta el ancho del contenedor */
-        height: auto;
-        margin: 130px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
-        flex-direction: column; /* Organiza en columna */
-        align-items: center; /* Centra el contenido horizontalmente */
-        padding: 10px; /* Añade padding para evitar que el contenido colapse */
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
     }
 
-    .slider,
-    .texto {
-        width: 100%; /* Ancho completo del contenedor */
-        height: 100%; /* Ajusta la altura automáticamente */
-        max-width: 570px; /* Limita el ancho máximo */
-        min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
-        margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+    .mision {
+        top: 180px; /* Mueve la misión más abajo */
     }
 
-    .footer,
-    .conte {
-        width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
-        margin: 20px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
-        position: relative; /* Asegura que esté pegado al contenedor principal */
-        display: flex;
-        justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
-        padding: 5px; /* Añade un pequeño padding alrededor del contenedor de botones */
-        right: 0%;
-    }
-
-    .footer-button,
-    .footerr-buttonn {
-        padding: 10px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
-        font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-        text-align: center; /* Centra el texto dentro del botón */
-        flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
-        margin: 0 5px; /* Añade un pequeño margen entre los botones */
-                display: flex;
-        justify-content: center; /* Centra el contenido dentro del botón */
-        align-items: center; /* Alinea verticalmente el contenido del botón */
+    .vision {
+        top: 280px; /* Mueve la visión más abajo */
     }
 }
