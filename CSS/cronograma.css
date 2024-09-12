@@ -1,0 +1,103 @@
+    .navbar {
+        position: fixed;
+        z-index: 1;
+    }
+    .fixed-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(fondo\ html.jpg);
+        background-position: center;
+        z-index: -1; /* Envía la imagen al fondo */
+        filter: blur(20px);
+    }
+    .contenedor-fijo {
+        display: flex;
+        justify-content: center; /* Centra el contenedor horizontalmente */
+        align-items: center; /* Centra el contenedor verticalmente */
+        position: fixed;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centra el contenedor absolutamente */
+        width: 95%;
+        height: 70%;
+        overflow: hidden;
+        padding-top: 50px; /* Ajusta para evitar que la barra de navegación lo cubra */
+        overflow-y: auto;
+
+    }
+    .contenedor-tabla {
+        width: 100%;
+        overflow-y: auto; /* Habilita el desplazamiento vertical */
+        border: 1px solid #ddd; /* Opcional: agrega un borde para visibilidad */
+        padding: 20px; /* Opcional: agrega un poco de espacio interno */
+        
+
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed; /* Fija el ancho de las columnas */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 2.5px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    td {
+        font-size: 25px;
+    }
+
+    /* Especificar anchos de las columnas */
+    th:nth-child(1), td:nth-child(1) {
+        width: 8%; /* Columna "Fecha" */
+    }
+
+    th:nth-child(2), td:nth-child(2) {
+        width: 55%; /* Columna "Cronograma" */
+    }
+
+    th:nth-child(3), th:nth-child(4),
+    td:nth-child(3), td:nth-child(4) {
+        width: 10%; /* Columnas "Si" y "No" */
+    }
+
+    /* Color verde para las casillas de "Si" */
+    .si {
+        background-color: #90ee90; /* Verde claro */
+        font-size: 15px;
+    }
+
+    /* Color rojo para las casillas de "No" */
+    .no {
+        background-color: #ff0400; /* Rojo claro */
+        font-size: 15px;
+    }
+
+    /* Estilos para las celdas de encabezado "Fecha", "Cronograma" y "Ejecutado" */
+    .fecha {
+        background-color: #ffebcd; 
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .cronograma {
+        background-color: #ffebcd; 
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .ejecutado {
+        background-color: #f0e68c; /* Amarillo suave */
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+    }
