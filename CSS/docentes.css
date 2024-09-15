@@ -116,7 +116,7 @@ p {
     .contenedor {
         width: 95%;
         height: auto; /* Permitir que el contenedor ajuste su altura automáticamente */
-        padding-top: 100px; /* Reduce el padding superior */
+        padding-top: 140px; /* Reduce el padding superior */
         margin: 0 auto; /* Centra el contenedor */
     }
 
