@@ -1,177 +1,177 @@
-.navbar {
-    position: fixed;
-    z-index: 1;
-}
-.fixed-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(fondo\ html.jpg);
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Envía la imagen al fondo */
-    filter: blur(10px);
-}
-
-.contenedor {
-    width: 1040px;
-    height: auto;
-    margin: 9% auto; /* Centrar el contenedor */
-    padding-top: 20px;
-    position: relative; /* Para contener elementos posicionados */
-}
-
-.slider {
-    position: relative;
-    overflow: hidden;
-    width: 75%;
-    height: 430px;
-    border: 3px solid black;
-    box-sizing: border-box;
-    border-radius: 15px;
-    display: flex; /* Usar flexbox para alinear contenido */
-    align-items: center; /* Centrar verticalmente */
-    position: fixed;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-
-.slide {
-    display: flex; /* Usar flexbox para contenido del slide */
-    min-width: 100%;
-    box-sizing: border-box;
-    align-items: center; /* Centrar verticalmente */
-}
-
-.slide img {
-    width: 350px;
-    height: 400px;
-    border-radius: 15px;
-    margin-right: 20px; /* Espacio entre imagen y texto */
-    margin: 50px;
-}
-
-.text {
-    flex: 1; /* Ocupa el espacio restante */
-    text-align: right; /* Alinear texto a la derecha */
- 
-    font-family: 'Times New Roman', Times, serif;
-   
-    padding: 10px; /* Espaciado interno */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    border-radius: 10px; /* Bordes redondeados */
-    margin-right: 50px;
-
-}
-b{
-   color: white; /* Color del texto */
-   font-size: 40px;
-}
-p{
-    color: white; /* Color del texto */
-    font-size: 20px;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: gray;
-}
-
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 600px) {
     .navbar {
-margin: -2px 15px;
-width: 87%;
-    }
-    .contenedor {
-        width: 95%;
-        height: 75%;
         position: fixed;
-        padding-top: 100px; /* Reduce el padding superior */
-        overflow: hidden; /* Desactiva el desplazamiento dentro del contenedor */
-        position: relative; /* Asegura que el contenedor se mantenga en su lugar */
+        z-index: 1;
+    }
+    .fixed-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(fondo\ html.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: -1; /* Envía la imagen al fondo */
+        filter: blur(10px);
+    }
+
+    .contenedor {
+        width: 1040px;
+        height: auto;
+        margin: 9% auto; /* Centrar el contenedor */
+        padding-top: 20px;
+        position: relative; /* Para contener elementos posicionados */
     }
 
     .slider {
-        height: calc(100% - 80px); /* Ajusta la altura del slider para ocupar el espacio restante */
-        width: 90%;
-        height: 90%;
-        overflow: hidden; /* Desactiva el desplazamiento dentro del slider */
-        margin: 0 auto; /* Centra el slider horizontalmente */
-        position: relative; /* Fija la posición para evitar el movimiento */
+        position: relative;
+        overflow: hidden;
+        width: 75%;
+        height: 430px;
+        border: 3px solid black;
+        box-sizing: border-box;
+        border-radius: 15px;
+        display: flex; /* Usar flexbox para alinear contenido */
+        align-items: center; /* Centrar verticalmente */
+        position: fixed;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
     }
 
     .slide {
-        display: flex;
-        flex-direction: column; /* Apila la imagen y el texto verticalmente */
-        align-items: center; /* Centra los elementos horizontalmente */
-        padding: 0.5rem; /* Reduce el padding interno de las slides */
-        overflow: hidden; /* Desactiva el desplazamiento dentro de cada slide */
-        position: relative; /* Fija la posición para evitar el movimiento */
-        height: 100%; /* Asegura que cada slide ocupe todo el espacio disponible */
+        display: flex; /* Usar flexbox para contenido del slide */
+        min-width: 100%;
+        box-sizing: border-box;
+        align-items: center; /* Centrar verticalmente */
     }
 
     .slide img {
-        width: 50%; /* Reduce el tamaño de la imagen al 50% del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
-        margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen del texto */
+        width: 350px;
+        height: 400px;
+        border-radius: 15px;
+        margin-right: 20px; /* Espacio entre imagen y texto */
+        margin: 50px;
     }
 
     .text {
-        width: auto; /* Ajusta el ancho automáticamente */
-        max-width: 80%; /* Limita el ancho máximo al 80% del contenedor */
-        margin: 0; /* Elimina márgenes adicionales */
-        padding: 0; /* Mantiene un padding reducido */
-        font-size: 25px; /* Ajusta el tamaño del texto */
-        text-align: center; /* Centra el texto */
-        overflow: hidden; /* Desactiva el desplazamiento del texto */
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centra el contenido verticalmente */
-        align-items: center; /* Centra el contenido horizontalmente */
-    }
+        flex: 1; /* Ocupa el espacio restante */
+        text-align: right; /* Alinear texto a la derecha */
+    
+        font-family: 'Times New Roman', Times, serif;
+    
+        padding: 10px; /* Espaciado interno */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        border-radius: 10px; /* Bordes redondeados */
+        margin-right: 50px;
 
-    .text p {
-        font-size: 25px;
     }
-
+    b{
+    color: white; /* Color del texto */
+    font-size: 40px;
+    }
+    p{
+        color: white; /* Color del texto */
+        font-size: 20px;
+    }
     .prev, .next {
-        font-size: 14px; /* Reduce el tamaño de las flechas de navegación */
-        padding: 10px; /* Reduce el padding de las flechas */
-        position: absolute; /* Asegura que las flechas no se muevan con el contenido */
-        top: 50%; /* Centra verticalmente las flechas */
-        transform: translateY(-50%); /* Ajusta para centrar exactamente */
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
     }
-}
-/* Ajustes específicos para pantallas medianas (hasta 800px) */
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: gray;
+    }
+
+    /* Estilos para pantallas pequeñas */
+    @media only screen and (max-width: 600px) {
+        .navbar {
+    margin: -2px 15px;
+    width: 87%;
+        }
+        .contenedor {
+            width: 95%;
+            height: 75%;
+            position: fixed;
+            padding-top: 100px; /* Reduce el padding superior */
+            overflow: hidden; /* Desactiva el desplazamiento dentro del contenedor */
+            position: relative; /* Asegura que el contenedor se mantenga en su lugar */
+        }
+
+        .slider {
+            height: calc(100% - 80px); /* Ajusta la altura del slider para ocupar el espacio restante */
+            width: 90%;
+            height: 90%;
+            overflow: hidden; /* Desactiva el desplazamiento dentro del slider */
+            margin: 0 auto; /* Centra el slider horizontalmente */
+            position: relative; /* Fija la posición para evitar el movimiento */
+        }
+
+        .slide {
+            display: flex;
+            flex-direction: column; /* Apila la imagen y el texto verticalmente */
+            align-items: center; /* Centra los elementos horizontalmente */
+            padding: 0.5rem; /* Reduce el padding interno de las slides */
+            overflow: hidden; /* Desactiva el desplazamiento dentro de cada slide */
+            position: relative; /* Fija la posición para evitar el movimiento */
+            height: 100%; /* Asegura que cada slide ocupe todo el espacio disponible */
+        }
+
+        .slide img {
+            width: 50%; /* Reduce el tamaño de la imagen al 50% del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-bottom: 1rem; /* Añade un margen inferior para separar la imagen del texto */
+        }
+
+        .text {
+            width: auto; /* Ajusta el ancho automáticamente */
+            max-width: 80%; /* Limita el ancho máximo al 80% del contenedor */
+            margin: 0; /* Elimina márgenes adicionales */
+            padding: 0; /* Mantiene un padding reducido */
+            font-size: 25px; /* Ajusta el tamaño del texto */
+            text-align: center; /* Centra el texto */
+            overflow: hidden; /* Desactiva el desplazamiento del texto */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente */
+            align-items: center; /* Centra el contenido horizontalmente */
+        }
+
+        .text p {
+            font-size: 25px;
+        }
+
+        .prev, .next {
+            font-size: 14px; /* Reduce el tamaño de las flechas de navegación */
+            padding: 10px; /* Reduce el padding de las flechas */
+            position: absolute; /* Asegura que las flechas no se muevan con el contenido */
+            top: 50%; /* Centra verticalmente las flechas */
+            transform: translateY(-50%); /* Ajusta para centrar exactamente */
+        }
+    }
+    /* Ajustes específicos para pantallas medianas (hasta 800px) */
 
 
