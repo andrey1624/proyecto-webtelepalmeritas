@@ -21,6 +21,7 @@
         margin: 9% auto; /* Centrar el contenedor */
         padding-top: 20px;
         position: relative; /* Para contener elementos posicionados */
+        position: fixed;
     }
 
     .slider {
