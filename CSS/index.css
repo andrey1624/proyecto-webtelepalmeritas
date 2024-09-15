@@ -57,7 +57,7 @@
 p {
     font-size: 23px;
     padding: 5px;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10PX;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
@@ -157,7 +157,7 @@ p {
         height: 100%; /* Ajusta la altura automáticamente */
         max-width: 570px; /* Limita el ancho máximo */
         min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
-        margin: 10px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+        margin: 8px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
     }
 p{
     font-size: 20px;
@@ -176,7 +176,7 @@ p{
 
     .footer-button,
     .footerr-buttonn {
-        padding: 10px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
+        padding: 13px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
         font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
         text-align: center; /* Centra el texto dentro del botón */
         flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
