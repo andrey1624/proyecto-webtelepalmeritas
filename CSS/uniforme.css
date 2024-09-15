@@ -76,6 +76,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .navbar {
+    margin: -2px 15px;
+    width: 87%;
+        }
   .contenedor-fijo {
     width: 85%;
     height: 84%;
