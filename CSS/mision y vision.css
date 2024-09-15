@@ -52,10 +52,10 @@ p,h1{
     }
 
     .mision {
-        top: 130px; /* Mueve la misión más abajo */
+        top: 80px; /* Mueve la misión más abajo */
     }
 
     .vision {
-        top: 220px; /* Mueve la visión más abajo */
+        top: 120px; /* Mueve la visión más abajo */
     }
 }
