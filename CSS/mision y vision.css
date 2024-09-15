@@ -52,50 +52,10 @@ p,h1{
     }
 
     .mision {
-        top: 180px; /* Mueve la misión más abajo */
+        top: 130px; /* Mueve la misión más abajo */
     }
 
     .vision {
-        top: 280px; /* Mueve la visión más abajo */
-    }
-}
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 1000px) {
-    .mision, .vision {
-        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
-        height: auto; /* Ajusta la altura automáticamente */
-        left: 5%; /* Centra los elementos en la pantalla */
-        top: 40%; /* Mueve los elementos más abajo en la pantalla */
-        position: relative; /* Cambia la posición a relativa para el flujo natural */
-        margin-bottom: 20px; /* Espacio entre los elementos */
-        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
-    }
-
-    .mision {
-        top: 180px; /* Mueve la misión más abajo */
-    }
-
-    .vision {
-        top: 280px; /* Mueve la visión más abajo */
-    }
-}
-/* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 1350px) {
-    .mision, .vision {
-        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
-        height: auto; /* Ajusta la altura automáticamente */
-        left: 5%; /* Centra los elementos en la pantalla */
-        top: 40%; /* Mueve los elementos más abajo en la pantalla */
-        position: relative; /* Cambia la posición a relativa para el flujo natural */
-        margin-bottom: 20px; /* Espacio entre los elementos */
-        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
-    }
-
-    .mision {
-        top: 180px; /* Mueve la misión más abajo */
-    }
-
-    .vision {
-        top: 280px; /* Mueve la visión más abajo */
+        top: 220px; /* Mueve la visión más abajo */
     }
 }
