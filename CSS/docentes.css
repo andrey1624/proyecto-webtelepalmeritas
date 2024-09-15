@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    z-index: 10;
+    z-index: 1;
 
 }
 .fixed-image {
@@ -16,7 +16,7 @@
     filter: blur(10px);
 }
 
-.container {
+.contenedor {
     width: 1040px;
     height: auto;
     margin: 9% auto; /* Centrar el contenedor */
@@ -109,14 +109,10 @@ p{
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
-    body, html {
-        overflow: hidden; /* Desactiva el desplazamiento de la página */
-    }
-
-    .container {
+    .contenedor {
         width: 95%;
         height: 75%;
-
+        position: fixed;
         padding-top: 100px; /* Reduce el padding superior */
         overflow: hidden; /* Desactiva el desplazamiento dentro del contenedor */
         position: relative; /* Asegura que el contenedor se mantenga en su lugar */
@@ -174,59 +170,5 @@ p{
     }
 }
 /* Ajustes específicos para pantallas medianas (hasta 800px) */
-@media only screen and (max-width: 800px) {
-    .navbar {
-        padding: 10px 10px;
-        height: auto;
-        width: 90%; /* Ajusta el ancho al 90% */
-        margin: 0 auto; /* Centra horizontalmente el contenedor */
-        border-radius: 15px;
-    }
 
-    .navbar .button-container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
-        justify-content: center; /* Alinea los botones al centro */
-    }
 
-    .navbar .button-container button {
-        padding: 8px 16px;
-        font-size: 14px;
-        width: calc(100% / 3 - 20px); /* Asegura que los botones tengan el mismo tamaño y haya espacio para el margen */
-        margin: 5px; /* Agrega un margen de 5px alrededor de los botones */
-    }
-
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-/* Ajustes específicos para pantallas grandes (hasta 1200px) */
-@media only screen and (max-width: 1200px) {
-    .navbar {
-        padding: 10px 10px;
-        height: auto;
-        width: 80%; /* Ajusta el ancho al 80% */
-        margin: 0 auto; /* Centra horizontalmente el contenedor */
-        border-radius: 15px;
-    }
-
-    .navbar .button-container {
-        display: flex;
-        flex-wrap: wrap; /* Permite que los botones se muevan a la siguiente línea si es necesario */
-        justify-content: center; /* Alinea los botones al centro */
-    }
-
-    .navbar .button-container button {
-        padding: 8px 16px;
-        font-size: 14px;
-        width: calc(100% / 3 - 20px); /* Asegura que los botones tengan el mismo tamaño y haya espacio para el margen */
-        margin: 5px; /* Agrega un margen de 5px alrededor de los botones */
-    }
-
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-    }
-}
