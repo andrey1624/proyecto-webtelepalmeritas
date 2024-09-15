@@ -1,7 +1,6 @@
 .navbar {
     position: fixed;
     z-index: 1;
-
 }
 .fixed-image {
     position: fixed;
@@ -109,6 +108,10 @@ p{
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
+    .navbar {
+margin: -2px 15px;
+width: 87%;
+    }
     .contenedor {
         width: 95%;
         height: 75%;
