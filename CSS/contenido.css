@@ -114,7 +114,7 @@
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .contenedor-fijo {
-    margin-top: -40px;
+    margin-top: -30px;
     height: 800px;
     }
 
