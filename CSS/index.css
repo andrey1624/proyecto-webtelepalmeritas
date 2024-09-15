@@ -13,7 +13,7 @@
 .contenedor {
     width: 1260px; /* Puedes cambiar esto si es necesario */
     height: 394px; /* Ajustado para coincidir con la altura del slider */
-    margin: 110px auto; /* Centrar el contenedor */
+    margin: 130px auto; /* Centrar el contenedor */
     position: relative;  
     border: 3px solid black;
     border-radius: 15px; 
@@ -113,7 +113,7 @@ p {
     border: 3px solid black;
     border-radius: 10px;
     position: absolute;
-    right: 70px;
+    right: 50px;
     margin-top: -55px;
 }
 
@@ -144,7 +144,7 @@ p {
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
-        margin: 130px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 70px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
         flex-direction: column; /* Organiza en columna */
         align-items: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Añade padding para evitar que el contenido colapse */
