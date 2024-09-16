@@ -34,6 +34,7 @@
     border-radius: 15px;
     display: flex; /* Usar flexbox para alinear contenido */
     align-items: center; /* Centrar verticalmente */
+    position: fixed;
 }
 
 .slides {
@@ -116,7 +117,7 @@ p {
     .contenedor {
         width: 95%;
         height: auto; /* Permitir que el contenedor ajuste su altura automáticamente */
-        padding-top: 190px; /* Reduce el padding superior */
+        padding-top: 180px; /* Reduce el padding superior */
         margin: 0 auto; /* Centra el contenedor */
     }
 
