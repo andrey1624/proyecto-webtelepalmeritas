@@ -53,12 +53,12 @@ th, td {
 }
 
 td {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Especificar anchos de las columnas */
 th:nth-child(1), td:nth-child(1) {
-    width: 8%; /* Columna "Fecha" */
+    width: 9%; /* Columna "Fecha" */
 }
 
 th:nth-child(2), td:nth-child(2) {
@@ -108,6 +108,9 @@ td:nth-child(3), td:nth-child(4) {
     .navbar {
         margin: -2px 15px;
         width: 87%;
+    }
+    .contenedor-fijo{
+        margin-top: -15px;
     }
     td{
         font-size: 17px;
