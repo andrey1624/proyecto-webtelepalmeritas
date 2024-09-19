@@ -122,7 +122,7 @@ p {
     }
 
     .slider {
-        height: calc(100% - 80px); /* Ajusta la altura del slider para ocupar el espacio restante */
+        height: calc(70% - 80px); /* Ajusta la altura del slider para ocupar el espacio restante */
         width: 90%;
         overflow: hidden; /* Desactiva el desplazamiento dentro del slider */
         margin: 0 auto; /* Centra el slider horizontalmente */
