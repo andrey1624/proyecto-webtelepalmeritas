@@ -55,9 +55,9 @@
 }
 
 p {
-    font-size: 23px;
+    font-size: 155%;
     padding: 5px;
-    margin: 10px 10px 10px 10PX;
+    margin: 20px 10px 10px 10PX;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
@@ -79,7 +79,7 @@ p {
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px 90px;
+    padding: 10px 40px;
     text-decoration: none;
     border-radius: 5px;
     font-family: Arial, sans-serif;
@@ -95,6 +95,28 @@ p {
 .footer-button.facebook:hover {
     background-color: #365899;
 }
+.footer-button.location{
+    text-decoration: none;
+    background-color: #ffffff; /* Color verde para el botón */
+    padding: 10px 20px 10px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #0056b3; /* Cambia el color cuando pasas el mouse */
+}
+
+.footer-button .icon {
+    width: 20px;  /* Tamaño del ícono */
+    height: 20px;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
 /*
 .footer-button.tiktok {
     background-color: #010101;
@@ -141,6 +163,52 @@ p {
 
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 600px) {
+    .contenedor {
+        width: 95%; /* Ajusta el ancho del contenedor */
+        height: auto;
+        margin: 50px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        flex-direction: column; /* Organiza en columna */
+        align-items: center; /* Centra el contenido horizontalmente */
+        padding: 10px; /* Añade padding para evitar que el contenido colapse */
+
+    }
+
+    .slider,
+    .texto {
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100%; /* Ajusta la altura automáticamente */
+        max-width: 570px; /* Limita el ancho máximo */
+        min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
+        margin: 8px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+    }
+p{
+    font-size: 20px;
+}
+
+    .footer,
+    .conte {
+        width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
+        margin: 20px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        position: relative; /* Asegura que esté pegado al contenedor principal */
+        display: flex;
+        justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
+        padding: 5px; /* Añade un pequeño padding alrededor del contenedor de botones */
+        right: 0%;
+    }
+
+    .footer-button,
+    .footerr-buttonn {
+        padding: 13px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
+        font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        text-align: center; /* Centra el texto dentro del botón */
+        flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
+        margin: 0 5px; /* Añade un pequeño margen entre los botones */
+                display: flex;
+        justify-content: center; /* Centra el contenido dentro del botón */
+        align-items: center; /* Alinea verticalmente el contenido del botón */
+    }
+}
+@media only screen and (max-width: 1200px) {
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
