@@ -188,7 +188,7 @@ p{
     .footer,
     .conte {
         width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
-        margin: 20px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 15px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
         position: relative; /* Asegura que esté pegado al contenedor principal */
         display: flex;
         justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
