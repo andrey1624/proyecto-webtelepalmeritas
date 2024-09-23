@@ -59,3 +59,22 @@ p,h1{
         top: 90px; /* Mueve la visión más abajo */
     }
 }
+@media only screen and (max-width: 1200px) {
+    .mision, .vision {
+        width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+        left: 5%; /* Centra los elementos en la pantalla */
+        top: 40%; /* Mueve los elementos más abajo en la pantalla */
+        position: relative; /* Cambia la posición a relativa para el flujo natural */
+        margin-bottom: 20px; /* Espacio entre los elementos */
+        font-size: 22px; /* Reduce el tamaño de la fuente para móviles */
+    }
+
+    .mision {
+        top: 60px; /* Mueve la misión más abajo */
+    }
+
+    .vision {
+        top: 90px; /* Mueve la visión más abajo */
+    }
+}
