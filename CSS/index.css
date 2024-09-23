@@ -167,7 +167,7 @@ p {
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
-        margin: 48px 0px 10px 0%; /* Reduce el margen inferior para juntar más los contenedores */
+        margin: 42px 0px 10px 0%; /* Reduce el margen inferior para juntar más los contenedores */
         flex-direction: column; /* Organiza en columna */
         align-items: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Añade padding para evitar que el contenido colapse */
