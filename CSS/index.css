@@ -127,7 +127,7 @@ p {
 }
 */
 .conte {
-    width: 15%;
+    width: 18%;
     height: 50px; /* Ajusta la altura según sea necesario */
     display: flex;
     justify-content: space-around;
@@ -162,15 +162,15 @@ p {
 }
 
 /* Estilos para pantallas pequeñas */
+
 @media only screen and (max-width: 600px) {
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
         height: auto;
-        margin: 50px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 48px 0px 10px 0%; /* Reduce el margen inferior para juntar más los contenedores */
         flex-direction: column; /* Organiza en columna */
         align-items: center; /* Centra el contenido horizontalmente */
         padding: 10px; /* Añade padding para evitar que el contenido colapse */
-
     }
 
     .slider,
@@ -179,16 +179,17 @@ p {
         height: 100%; /* Ajusta la altura automáticamente */
         max-width: 570px; /* Limita el ancho máximo */
         min-height: 240px; /* Asegura una altura mínima para que los contenedores se muestren */
-        margin: 5px 0; /* Ajusta el margen superior e inferior para espaciar los elementos */
+        margin: 5px 0; /* Reduce el margen superior e inferior para que estén más juntos */
     }
-p{
-    font-size: 20px;
-}
+
+    p {
+        font-size: 20px;
+    }
 
     .footer,
     .conte {
         width: 97%; /* Ajusta el ancho para que ocupe todo el contenedor */
-        margin: 15px 0px 20px 0%; /* Mueve el contenedor un poco a la izquierda */
+        margin: 5px 0px 5px 0%; /* Reduce el margen superior e inferior */
         position: relative; /* Asegura que esté pegado al contenedor principal */
         display: flex;
         justify-content: space-between; /* Distribuye los botones a lo largo del contenedor */
@@ -198,16 +199,17 @@ p{
 
     .footer-button,
     .footerr-buttonn {
-        padding: 13px 15px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
+        padding: 5px 5px; /* Ajusta el padding para que los botones se acomoden bien en el contenedor */
         font-size: 13px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
         text-align: center; /* Centra el texto dentro del botón */
         flex-grow: 1; /* Permite que los botones crezcan para ocupar el espacio disponible */
-        margin: 0 5px; /* Añade un pequeño margen entre los botones */
-                display: flex;
+        margin: 0 3px; /* Reduce el margen entre los botones para acercarlos más */
+        display: flex;
         justify-content: center; /* Centra el contenido dentro del botón */
         align-items: center; /* Alinea verticalmente el contenido del botón */
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .contenedor {
         width: 95%; /* Ajusta el ancho del contenedor */
