@@ -1,63 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Inicio</title>
-    <link rel="stylesheet" href="CSS/styles.css"> <link rel="stylesheet" href="CSS/index.css">
-
-</head>
-<body>
-    <img src="fondo html.jpg" alt=""class="fixed-image">
-    <header class="navbar">
-        <div class="button-container">
-            <button onclick="window.location.href='docentes.html'">P. ADMINISTRATIVO</button>
-            <button onclick="window.location.href='contenido.html'">CONTENIDO</button>
-            <button onclick="window.location.href='cronograma.html'">CRONOGRAMA</button>
-            <button onclick="window.location.href='mision y vision.html'">MISÍON Y VISIÓN</button>
-            <button onclick="window.location.href='sedes.html'">SEDES</button>
-            <button onclick="window.location.href='uniforme.html'">UNIFORME</button>
-        </div>    
-        <img src="logo-colegio.png" alt="" class="logo">
-    </header>
-    
-    <div class="contenedor">
-        <div class="slider">
-            <img src="img inicio/foto.jpeg" class="active" alt="Imagen 1">
-            <img src="img inicio/foto 2.jpeg" alt="Imagen 2">
-            <img src="img inicio/foto 3.jpeg" alt="Imagen 3">
-            <img src="img inicio/foto 4.jpeg" alt="Imagen 4">
-            <img src="img inicio/foto 5.jpeg" alt="Imagen 4">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="CSS/styles.css"> 
+        <link rel="stylesheet" href="CSS/index.css">
+    </head>
+    <body>
+        <img src="fondo html.jpg" alt=""class="fixed-image">
+        <header class="navbar">
+            <div class="button-container">
+                <button onclick="window.location.href='docentes.html'">P. ADMINISTRATIVO</button>
+                <button onclick="window.location.href='contenido.html'">CONTENIDO</button>
+                <button onclick="window.location.href='cronograma.html'">CRONOGRAMA</button>
+                <button onclick="window.location.href='mision y vision.html'">MISÍON Y VISIÓN</button>
+                <button onclick="window.location.href='sedes.html'">SEDES</button>
+                <button onclick="window.location.href='uniforme.html'">UNIFORME</button>
+            </div>    
+            <img src="logo-colegio.png" alt="" class="logo">
+        </header>
+        
+        <div class="contenedor">
+            <div class="slider">
+                <img src="img inicio/foto.jpeg" class="active" alt="Imagen 1">
+                <img src="img inicio/foto 2.jpeg" alt="Imagen 2">
+                <img src="img inicio/foto 3.jpeg" alt="Imagen 3">
+                <img src="img inicio/foto 4.jpeg" alt="Imagen 4">
+                <img src="img inicio/foto 5.jpeg" alt="Imagen 4">
+            </div>
+            <div class="texto"><p>¡HOLA!
+                Bienvenido, esperamos que su visita le ofrezca la información que precise de forma ágil y dinámica. El propósito de esta ES dar a conocer nuestra institución, las enseñanzas que en el mismo se imparten, así como las actividades que se van desarrollando, por lo que es de utilidad para los alumnos/as, madres y padres y a todo aquel que quiera acerque a este espacio. </p>
+            <p> Confiamos en que la puedan utilizar como herramienta informativa y de gestión. ¡éxito!</p></div>
         </div>
-        <div class="texto"><p>¡HOLA!
-            Bienvenido, esperamos que su visita le ofrezca la información que precise de forma ágil y dinámica. El propósito de esta ES dar a conocer nuestra institución, las enseñanzas que en el mismo se imparten, así como las actividades que se van desarrollando, por lo que es de utilidad para los alumnos/as, madres y padres y a todo aquel que quiera acerque a este espacio. </p>
-           <p> Confiamos en que la puedan utilizar como herramienta informativa y de gestión. ¡éxito!</p></div>
-    </div>
-    
-    <div class="footer">
-        <a href="https://www.facebook.com/egresados.coltelepalmeritas" class="footer-button facebook">Facebook</a>
-    <!-- <a href="#" class="footer-button tiktok"> TikTok</a> -->
-    </div>
-    
-    <div class="conte">
-        <a href="prom.html" class="footerr-buttonn cont"> PROM</a>
-    </div>
-    
-    <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.slider img');
+        
+        <div class="footer">
+            <a href="https://www.facebook.com/egresados.coltelepalmeritas" class="footer-button facebook">Facebook</a>
+            <a href="https://www.google.com/maps/@4.8312848,-73.1215642,3a,75y,206.77h,88.96t/data=!3m6!1e1!3m4!1sDZgzOXjiJPNHiCCinr4kfA!2e0!7i16384!8i8192?coh=205409&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" class="footer-button location">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Ubicación" class="icon">  
+            </a>
+            
+            
+        <!-- <a href="#" class="footer-button tiktok"> TikTok</a> -->
+        </div>
+        
+        <div class="conte">
+            <a href="prom.html" class="footerr-buttonn cont"> PROM</a>
+        </div>
+        
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slider img');
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
 
-            currentIndex = (currentIndex + 1) % images.length;
+                currentIndex = (currentIndex + 1) % images.length;
 
-            images[currentIndex].classList.add('active');
-        }
+                images[currentIndex].classList.add('active');
+            }
 
-        setInterval(showNextImage, 3000); // Cambia de imagen cada 3 segundos
-    </script>
-</body>
-</html>
+            setInterval(showNextImage, 3000); // Cambia de imagen cada 3 segundos
+        </script>
+    </body>
+    </html>
