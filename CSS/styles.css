@@ -89,3 +89,40 @@ body {
         transform: translateY(-50%); /* Centra el logo verticalmente en la barra */
     }
 }
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        padding: 10px 10px;
+        height: auto;
+        width: 90%;
+        border-radius: 15px;
+        left: 47%;
+        transform: translateX(-50%);
+        margin: -10px auto;
+        position: relative; /* Permite que el logo se posicione correctamente */
+    }
+
+    .navbar .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra los botones */
+        width: 80%; /* Asegura que los botones ocupen todo el espacio disponible */
+    }
+
+    .navbar .button-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: calc(100% / 3 - 10px); /* Ajusta para que quepan tres botones por fila */
+        margin: 5px;
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        right: 20px; /* Posiciona el logo a 10px del borde derecho */
+        transform: translateY(-50%); /* Centra el logo verticalmente en la barra */
+    }
+}
+
