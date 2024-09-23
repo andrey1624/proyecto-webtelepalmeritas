@@ -130,3 +130,59 @@ p {
     word-wrap: break-word; /* Permite que el texto se ajuste al ancho del contenedor */
   }
 }
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    margin: -2px 15px;
+    width: 87%;
+        }
+  .contenedor-fijo {
+    width: 85%;
+    height: 84%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-top: 5px;
+  }
+
+  /* Aquí está la modificación */
+  ol {
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+
+  ol div {
+    width: 90%; /* Ajusta el ancho al 90% */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+    margin: 0; /* Elimina el margen */
+    font-size: 20px; /* Reduce el tamaño de la fuente */
+    margin-left: 3%; /* Centra el div horizontalmente */
+    display: flex;
+    flex-direction: column; /* Coloca el texto arriba y la imagen abajo */
+    align-items: center; /* Centra ambos elementos */
+    padding: 0;
+  }
+
+  ol div img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: auto; /* Centra la imagen horizontalmente */
+    display: block;
+  }
+
+  p {
+    width: 100%; /* El texto ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    font-size: 38px; /* Tamaño de fuente ajustado */
+    margin: 10px auto; /* Margen ajustado para el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Espacio interno del texto */
+    word-wrap: break-word; /* Permite que el texto se ajuste al ancho del contenedor */
+  }
+}
+
