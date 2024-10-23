@@ -110,7 +110,73 @@
         margin: 0;
     }
 
+@media only screen and (max-width: 450px) {
+    .contenedor-fijo {
+    margin-top: -40px;
+    height: 800px;
+    }
 
+    .conte {
+        width: 95%; /* Ocupa casi todo el ancho */
+        height: auto;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    .fecha {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+    }
+
+    .titulo {
+        position: relative;
+        left: -25px;
+        font-size: 28px; /* Aumenta el tamaño del título */
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 50px; /* Más espacio debajo de la fecha */
+        margin-bottom: 10px; /* Añade un margen inferior */
+        font-weight: bold; /* Hacer que el título sea más destacado */
+    }
+
+    .argumento {
+        width: 95%;
+        margin-bottom: 20px; /* Espacio debajo del argumento */
+        position: relative;
+        text-align: center; /* Centra el texto */
+        font-size: 18px; /* Ajusta el tamaño del texto del argumento */
+        line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+        margin-top: -170px; /* Ajuste de margen superior */
+    }
+
+    .slider {
+        width: 95%;
+        height: 400px; /* Altura del slider */
+        margin-top: 0; /* Sin margen superior */
+        margin-bottom: 60px; /* Espacio debajo del slider */
+        position: relative;
+        overflow: hidden; /* Asegura que el contenido del slider no sobresalga */
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        padding-bottom: 20px; /* Añade 20px de padding en la parte inferior */
+    }
+
+    .slider img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del slider */
+        height: 100%; /* Asegura que la imagen ocupe toda la altura del slider */
+        object-fit: cover; /* Expande la imagen para cubrir todo el slider */
+    }
+
+        }
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .contenedor-fijo {
